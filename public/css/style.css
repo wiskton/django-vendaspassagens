@@ -1,0 +1,40 @@
+body {
+    margin:0px; 
+    padding: 0px;
+    font-size: 12px;
+    font-family: Verdana, Arial;
+}
+
+#principal {
+    width:100%; 
+    margin:0px; 
+    padding: 0px; 
+    border: #CCC solid 1px;
+}
+
+#principal .topo{
+    background-color: #CCC;
+    min-height: 80px;
+    padding: 10px;
+}
+
+#principal .topo .titulo{
+    width:30%;
+    float:left;
+}
+
+#principal .topo .titulo{
+    width:70%;
+    float:left;
+}
+
+#principal .body{
+    padding: 10px;
+    min-height: 250px;
+}
+
+#principal .rodape{
+    padding: 10px;
+    background-color: #CCC;
+    min-height: 80px;
+}

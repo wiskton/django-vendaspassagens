@@ -1,0 +1,53 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br">
+<head>
+    <!-- Google -->
+    <meta name="verify-v1" content="/a2TCJq+UU7t+A1yqb767Ydcld61oru6YOSU4QEaVFc=" />
+    <meta name="verify-v1" content="iTvEtW78UxLT54yMb0Jd1M+l/cTiAGT2Kp3ObNWNwFk=" />
+    <!-- Formato -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <title>SOS LINKS</title>
+    
+    <!-- Descrição do site -->
+    <meta name="description" content="SOS LINKS" >
+    <meta name="keywords" content="SOS LINKS">
+    
+    <!-- Localização do site -->
+    <meta http-equiv="Content-language" content="pt-BR">
+
+    <!-- Icone do site -->
+    <link Rel="Add Icon" Href="{{ STATIC_URL }}imgs/icone.png">
+    <link Rel="Shortcut Icon" Href="{{ STATIC_URL }}imgs/icone.png">
+    <link rel="Icon" href="{{ STATIC_URL }}imgs/icone.png" type="image/png">
+    
+    <!-- CSS do site -->
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/style.css" type="text/css">
+
+</head>
+<body>
+
+    <div id="principal">
+
+        <div class="topo">
+            <div class="titulo">TÍTULO</div>
+            <div class="busca">
+
+                <form>
+                    <input type="text" > <input type="submit" value=" BUSCAR " />
+                </form>
+
+            </div>
+        </div>
+        <div class="body">
+        {% block body %}   
+
+        {% endblock %}   
+        </div>
+        <div class="rodape">
+            RODAPE
+        </div>     
+
+    </div>
+
+</body>
+</html>

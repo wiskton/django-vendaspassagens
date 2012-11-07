@@ -1,0 +1,45 @@
+# OSX
+.DS_Store
+.AppleDouble
+
+# Windows
+thumbs.db
+
+# Python / uWSGI
+*.pyc
+*.pyo*
+.pip-log.txt
+
+# Xcode 4
+*.swp
+*~.nib
+build/
+*.pbxuser
+*.perspective
+*.perspectivev3
+*.mode1v3
+*.mode2v3
+xcuserdata
+
+# Middleman
+.sass-cache
+
+# Other
+*.db
+*.swo
+*.swn
+*.~lock*
+*.*~
+*~
+r
+
+# Django / APP
+local_settings.py
+build
+celerybeat-schedule
+#media -> .gitignore movido para dentro do diretorio
+#/static -> .gitignore movido para dentro do diretorio
+#/static/css -> .gitignore movido para dentro do diretorio
+
+# SASS generated CSS
+app/static/css

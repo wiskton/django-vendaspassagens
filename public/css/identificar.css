@@ -28,7 +28,7 @@
 .form-login 
 {
     margin-left: 30px;
-    margin-top: 15px;
+    margin-top: 10px;
     position: absolute;
 }
 
@@ -41,12 +41,12 @@ h2
 label
 {
     display: block;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 input[type="text"], input[type="password"]
 {
-    margin-top: 5px;
+    margin-top: 15px;
     background: #F2F1F0;
     border: 1px solid #DFDDDB;
     width: 290px;
@@ -65,7 +65,7 @@ input:focus
     padding: 7px 39px;
     border: none;
     color: #FFF;
-    margin-top: 55px;
+    margin-top: 65px;
     position: absolute;
     left: 0;
 }

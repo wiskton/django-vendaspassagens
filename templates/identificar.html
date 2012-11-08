@@ -15,7 +15,7 @@
                 <div class="form-login">
                     <form action="#">
                         <label>CPF</label>
-                        <input type="text" />
+                        <input type="text" maxlength="11"/>
                         <label>SENHA</label>
                         <input type="password" />
                         <input type="submit" value="Entrar" class="login"/>
@@ -28,8 +28,8 @@
             <h2>Cadastre um novo usuário.</h2>
             <div class="form">
                 <div class="grid-cadastro">
-                    <img src="images/icon.png" alt="Cadastrar" />
-                    <a href="cadastro.aspx" >Clique aqui para cadastrar.</a>
+                    <img src="{{ STATIC_URL }}imgs/icon.png" alt="Cadastrar" />
+                    <a href="{% url "cadastro" %}" >Clique aqui para cadastrar.</a>
                 </div>
             </div>
         </div>

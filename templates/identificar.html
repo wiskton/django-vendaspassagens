@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% load url from future %}
+
+{% block css %}
+<link rel="stylesheet" href="{{ STATIC_URL }}css/identificar.css" type="text/css">
+{% endblock %}
+
+{% block content %}
+<div class="content-consulta">
+	<div class="grid-bloco">
+    	<div class="grid-identificar">
+        <div class="entrar">
+            <h2>Entre com seu usuário para efetuar a compra.</h2>
+            <div class="form">
+                <div class="form-login">
+                    <form action="#">
+                        <label>CPF</label>
+                        <input type="text" />
+                        <label>SENHA</label>
+                        <input type="password" />
+                        <input type="submit" value="Entrar" class="login"/>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="cadastrar">
+            <h2>Cadastre um novo usuário.</h2>
+            <div class="form">
+                <div class="grid-cadastro">
+                    <img src="images/icon.png" alt="Cadastrar" />
+                    <a href="cadastro.aspx" >Clique aqui para cadastrar.</a>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    </div>
+</div>
+{% endblock %}

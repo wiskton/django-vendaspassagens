@@ -1,4 +1,5 @@
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br">
+<!DOCTYPE html>
+<html>
 <head>
     <!-- Google -->
     <meta name="verify-v1" content="/a2TCJq+UU7t+A1yqb767Ydcld61oru6YOSU4QEaVFc=" />
@@ -22,32 +23,71 @@
     
     <!-- CSS do site -->
     <link rel="stylesheet" href="{{ STATIC_URL }}css/style.css" type="text/css">
+    {% block css %}
+    {% endblock %}
 
 </head>
-<body>
+<body>    
+<div class="header">
+</div>
+{% block menu %}{% include "menu.html" %}{% endblock %}
 
-    <div id="principal">
-
-        <div class="topo">
-            <div class="titulo">TÍTULO</div>
-            <div class="busca">
-
-                <form>
-                    <input type="text" > <input type="submit" value=" BUSCAR " />
-                </form>
-
-            </div>
+<div class="content">
+    {% block content %}
+    <div class="consulta grid-900">
+        <div class="mapa">
+            <img src="{{ STATIC_URL }}imgs/map.png" alt="Mapa" />
         </div>
-        <div class="body">
-        {% block body %}   
+        <div class="form-consulta">
+            <h2 class="title">CONSULTA A COMPRA DE PASSAGENS ONLINE</h2>
+            <form>
+                <div class="input-ida">
+                    <input type="radio" name="ida" id="ida"/>
+                    <label for="ida">ida e volta</label>
+                </div>
+                
+                <div class="input-s-ida">
+                    <input type="radio" name="s-ida" id="s-ida"/>
+                    <label for="s-ida">somente ida</label>
+                </div>
+                
+                <div class="seleciona-destino">
+                    <div class="saida">
+                        <div class="left">
+                            <label>saída</label>
+                            <select>
+                                <option>Estado</option>
+                                <option></option>
+                                <option></option>
+                            </select>
+                        </div>
+                        <div class="right">
+                            <label>data de saida</label>
+                            <input type="text" maxlength="10"/>
+                        </div>
+                    </div>
 
-        {% endblock %}   
+                    <div class="destino top">
+                        <div class="left">
+                            <label>destino</label>
+                            <select>
+                                <option>Estado</option>
+                                <option></option>
+                                <option></option>
+                            </select>
+                        </div>
+                        <div class="right">
+                            <label>data de destino</label>
+                            <input type="text" maxlength="10"/>
+                        </div>                    
+                    </div>
+                    
+                    <input type="submit" value="Comprar"/>  
+                </div>
+            </form>
         </div>
-        <div class="rodape">
-            RODAPE
-        </div>     
-
     </div>
-
+    {% endblock %}
+</div>
 </body>
 </html>

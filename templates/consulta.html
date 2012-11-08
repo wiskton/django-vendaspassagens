@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block css %}
+<link rel="stylesheet" href="{{ STATIC_URL }}css/consulta.css" type="text/css">
+{% endblock %}
+
+{% block content %}
+<div class="content-consulta">
+	<div class="grid-bloco">
+    	<label class="cidade">CIDADE - 26/10/2012</label>
+	    <div class="tabela-resultado">
+	        <table cellpadding="10">
+	            <tr class="title">
+	                <td><label>Selecionar</label></td>
+	                <td><label>Partida</label></td>
+	                <td><label>Chegada</label></td>
+	                <td><label>Valor</label></td>
+	                <td><label>Poltronas livres</label></td>
+	            </tr>
+
+	            <tr class="resultado">
+	                <td><input type="radio" name="r1" id="r1"/></td>
+	                <td><label for="r1">08:30</label></td>
+	                <td><label for="r1">10:30</label></td>
+	                <td><label for="r1">30,00</label></td>
+	                <td><label for="r1">12</label></td>
+	            </tr>
+
+	            <tr class="resultado">
+	                <td><input type="radio" name="r2" id="r2" name="r2"/></td>
+	                <td><label for="r2">08:30</label></td>
+	                <td><label for="r2">10:30</label></td>
+	                <td><label for="r2">30,00</label></td>
+	                <td><label for="r2">12</label></td>
+	            </tr>
+
+	           <tr class="resultado">
+	                <td><input type="radio" name="r3" id="r3" name="r3"/></td>
+	                <td><label for="r3">08:30</label></td>
+	                <td><label for="r3">10:30</label></td>
+	                <td><label for="r3">30,00</label></td>
+	                <td><label for="r3">12</label></td>
+	            </tr>
+
+	        
+	        </table>
+	    </div>
+    </div>
+</div>
+{% endblock %}

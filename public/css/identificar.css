@@ -1,0 +1,106 @@
+.grid-identificar 
+{
+    margin: 0 auto;
+    width: 815px;
+    height: 300px;
+    top: 50px;
+    position: relative;
+}
+
+.entrar 
+{
+    float: left;
+    width: 406px;
+    height: auto;
+    border-right: 1px solid #F2F1F0;
+}
+
+.form 
+{
+    width: 350px;
+    height: 218px;
+    margin-left: 0;
+    background: #FFF;
+    margin-top: 20px;
+    position:relative;
+}
+
+.form-login 
+{
+    margin-left: 30px;
+    margin-top: 15px;
+    position: absolute;
+}
+
+h2 
+{
+    color: #333;
+    font-size: 16px;
+}
+
+label
+{
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="text"], input[type="password"]
+{
+    margin-top: 5px;
+    background: #F2F1F0;
+    border: 1px solid #DFDDDB;
+    width: 290px;
+    height: 34px;
+    padding-left: 8px;
+}    
+
+input:focus 
+{
+    border-color: #395998; 
+}  
+
+.login 
+{
+    background: #395998;
+    padding: 7px 39px;
+    border: none;
+    color: #FFF;
+    margin-top: 55px;
+    position: absolute;
+    left: 0;
+}
+
+.login:hover 
+{
+    background: #DFDDDB;
+    color: #666;
+}  
+
+.cadastrar 
+{
+    float: right;
+    
+}
+
+.grid-cadastro 
+{
+    margin: 0 auto;
+    width: 196px;
+    height: 78px;
+    left: 80px;
+    top: 80px;
+    position: absolute;
+}
+
+img 
+{
+    display: block;
+    margin: 0 auto;
+}
+
+.grid-cadastro a 
+{
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+}

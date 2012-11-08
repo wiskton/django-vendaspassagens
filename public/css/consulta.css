@@ -1,0 +1,45 @@
+.cidade 
+    {
+        margin-left: 45px;
+    }
+
+    
+    
+    .content-consulta .tabela-resultado
+    {
+        background: #FFF;
+        margin: 0 auto;
+        width: 610px;
+        height: 170px;
+        margin-top: 30px;
+    }
+
+    .tabela-resultado label {
+        position: relative;
+        top: 10px;
+    }
+    
+    .content-consulta .tabela-resultado .title td
+    {
+        background: #395998;
+        color: #FFF;
+        margin-top: 5px;
+        padding-top: 5px;
+    }
+     td {
+        background: #F2F1F0;
+        color: #333; 
+        width: 114px;
+        padding: 6px 0 6px 0;
+        height: 20px;
+        display: block;
+        float: left;
+        text-align: center;
+        margin-top: 6px;
+        margin-left: 6px;
+    }
+    
+    .resultado:hover td
+    {
+        background: #DFDDDB;
+    }

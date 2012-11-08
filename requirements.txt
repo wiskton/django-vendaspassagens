@@ -6,4 +6,8 @@ django-devserver==0.4.0
 paramiko==1.9.0
 pycrypto==2.6
 wsgiref==0.1.2
+<<<<<<< HEAD
 MySQL-python==1.2.4b5
+=======
+MySQL-python==1.2.4b5
+>>>>>>> dc9e0b5b68a2b62207348fd1b317f0fe684842be

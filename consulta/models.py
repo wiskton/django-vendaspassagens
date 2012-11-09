@@ -4,9 +4,9 @@ from django.db import models
 
 class Reserva(models.Model):
 	cidade = models.CharField(max_length=100)
-	data = models.Date('data saida')
+	data = models.DateField('data saida')
 
 class Destino(models.Model):
 	reserva = models.ForeignKey(Reserva)
 	cidadeDestino = models.CharField(max_length=100)
-	dataDestino = Date('data destino')
+	dataDestino = models.DateField('data destino')

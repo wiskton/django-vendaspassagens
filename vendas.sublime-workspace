@@ -3,23 +3,135 @@
 	{
 		"selected_items":
 		[
+			[
+				"da",
+				"Date"
+			],
+			[
+				"C",
+				"CharField"
+			],
+			[
+				"bo",
+				"border"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"i",
+				"imgs"
+			],
+			[
+				"ma",
+				"margin"
+			],
+			[
+				"te",
+				"text-decoration"
+			],
+			[
+				"fo",
+				"font-weight"
+			],
+			[
+				"a",
+				"auto"
+			],
+			[
+				"u",
+				"ul	Tag"
+			],
+			[
+				"in",
+				"input	Tag"
+			],
+			[
+				"op",
+				"option"
+			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "config/local_settings.py",
+			"file": "templates/base.html",
 			"settings":
 			{
-				"buffer_size": 1221,
+				"buffer_size": 1522,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "requirements.txt",
+			"file": "templates/home.html",
 			"settings":
 			{
-				"buffer_size": 159,
+				"buffer_size": 2597,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "config/urls.py",
+			"settings":
+			{
+				"buffer_size": 1844,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "templates/menu.html",
+			"settings":
+			{
+				"buffer_size": 363,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "templates/consulta.html",
+			"settings":
+			{
+				"buffer_size": 1748,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "templates/identificar.html",
+			"settings":
+			{
+				"buffer_size": 1270,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "consulta/models.py",
+			"settings":
+			{
+				"buffer_size": 334,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "config/settings.py",
+			"settings":
+			{
+				"buffer_size": 5039,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "consulta/tests.py",
+			"settings":
+			{
+				"buffer_size": 383,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "consulta/views.py",
+			"settings":
+			{
+				"buffer_size": 26,
 				"line_ending": "Windows"
 			}
 		}
@@ -48,10 +160,26 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Hebert/projetos/vendas_passagens/public/css/consulta.css",
+		"/C/Users/Hebert/projetos/vendas_passagens/public/css/style.css",
+		"/C/Users/Hebert/projetos/vendas_passagens/public/css/cadastro.css",
+		"/C/Users/Hebert/projetos/vendas_passagens/public/css/reset.css",
+		"/C/Users/Hebert/projetos/vendas_passagens/public/css/estilo.css",
+		"/C/Users/Hebert/projetos/vendas_passagens/templates/cadastro.html",
+		"/C/Users/Hebert/projetos/vendas_passagens/templates/index.html",
+		"/C/Users/Hebert/projetos/vendas_passagens/public/css/identificar.css",
+		"/C/Users/Hebert/projetos/vendas_passagens/templates/identificar.html",
+		"/C/Users/Hebert/projetos/vendas_passagens/templates/consulta.html",
+		"/C/Users/Hebert/projetos/vendas_passagens/public/css/index.html",
+		"/C/Users/Hebert/projetos/vendas_passagens/templates/home.html",
+		"/C/Users/Hebert/projetos/vendas_passagens/templates/identifcar.html",
+		"/C/Users/Hebert/projetos/vendas_passagens/templates/menu.html",
+		"/C/Users/Hebert/projetos/vendas_passagens/config/local_settings.py",
+		"/C/Users/Hebert/projetos/vendas_passagens/requirements.txt"
 	],
 	"find":
 	{
-		"height": 0.0
+		"height": 34.0
 	},
 	"find_in_files":
 	{
@@ -65,6 +193,20 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"table",
+			"input",
+			"eleme",
+			"content",
+			"content-consulta",
+			"content",
+			"bloco",
+			"che",
+			"box",
+			"input",
+			"for",
+			"selec",
+			"labe",
+			"></"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -82,23 +224,79 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 6,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "config/local_settings.py",
+					"file": "templates/base.html",
 					"settings":
 					{
-						"buffer_size": 1221,
+						"buffer_size": 1522,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								642,
-								938
+								1360,
+								1360
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 467.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "templates/home.html",
+					"settings":
+					{
+						"buffer_size": 2597,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								622,
+								622
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 54.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "config/urls.py",
+					"settings":
+					{
+						"buffer_size": 1844,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								495,
+								499
 							]
 						],
 						"settings":
@@ -114,24 +312,185 @@
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "requirements.txt",
+					"buffer": 3,
+					"file": "templates/menu.html",
 					"settings":
 					{
-						"buffer_size": 159,
+						"buffer_size": 363,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								159,
-								159
+								97,
+								97
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "templates/consulta.html",
+					"settings":
+					{
+						"buffer_size": 1748,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								187,
+								171
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "templates/identificar.html",
+					"settings":
+					{
+						"buffer_size": 1270,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "consulta/models.py",
+					"settings":
+					{
+						"buffer_size": 334,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								296,
+								296
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "config/settings.py",
+					"settings":
+					{
+						"buffer_size": 5039,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2463,
+								2463
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1420.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "consulta/tests.py",
+					"settings":
+					{
+						"buffer_size": 383,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "consulta/views.py",
+					"settings":
+					{
+						"buffer_size": 26,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -183,6 +542,66 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"sty",
+				"public/css/style.css"
+			],
+			[
+				"es",
+				"public/css/estilo.css"
+			],
+			[
+				"re",
+				"public/css/reset.css"
+			],
+			[
+				"ca",
+				"public/css/cadastro.css"
+			],
+			[
+				"in",
+				"templates/identificar.html"
+			],
+			[
+				"co",
+				"templates/consulta.html"
+			],
+			[
+				"cad",
+				"public/css/cadastro.css"
+			],
+			[
+				"cada",
+				"templates/cadastro.html"
+			],
+			[
+				"s",
+				"public/css/style.css"
+			],
+			[
+				"est",
+				"public/css/estilo.css"
+			],
+			[
+				"ho",
+				"templates/home.html"
+			],
+			[
+				"ind",
+				"templates/index.html"
+			],
+			[
+				"m",
+				"templates/menu.html"
+			],
+			[
+				"ur",
+				"config/urls.py"
+			],
+			[
+				"bas",
+				"templates/base.html"
+			]
 		],
 		"width": 0.0
 	},
@@ -198,6 +617,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 150.0,
+	"side_bar_width": 195.0,
 	"status_bar_visible": true
 }

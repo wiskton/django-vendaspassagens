@@ -2,20 +2,22 @@
 {
     width: 100%;
     height: 100%;
-    background: #FFF;
+    background: #F6F6F6;
+    box-shadow: 0px 0px 5px #666;
 }
 
 table {
     position: relative;
     top: 15px;
     margin: 0 auto;
+    padding: 20px;
 }
 
 input[type="text"], select, input[type="password"]
 {
     width: 163px;
     height: 34px;
-    background: #f2f1f0;
+    background: #e8e8e8;
     border: 1px solid #DFDDDB;
     display: block;
     padding-left: 10px;

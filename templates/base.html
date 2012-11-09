@@ -23,71 +23,33 @@
     
     <!-- CSS do site -->
     <link rel="stylesheet" href="{{ STATIC_URL }}css/style.css" type="text/css">
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/estilo.css" type="text/css">
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/reset.css" type="text/css">
     {% block css %}
     {% endblock %}
 
 </head>
 <body>    
-<div class="header">
-</div>
-{% block menu %}{% include "menu.html" %}{% endblock %}
+<header>
+<div id="box">
+    <div id="logo">
 
+    </div>
+
+        <h1> Pedro Felipe Melo </h1>
+    </div>
+</header>
+    {% block menu %}{% include "menu.html" %}{% endblock %}
 <div class="content">
     {% block content %}
-    <div class="consulta grid-900">
-        <div class="mapa">
-            <img src="{{ STATIC_URL }}imgs/map.png" alt="Mapa" />
-        </div>
-        <div class="form-consulta">
-            <h2 class="title">CONSULTA A COMPRA DE PASSAGENS ONLINE</h2>
-            <form>
-                <div class="input-ida">
-                    <input type="radio" name="ida" id="ida"/>
-                    <label for="ida">ida e volta</label>
-                </div>
-                
-                <div class="input-s-ida">
-                    <input type="radio" name="s-ida" id="s-ida"/>
-                    <label for="s-ida">somente ida</label>
-                </div>
-                
-                <div class="seleciona-destino">
-                    <div class="saida">
-                        <div class="left">
-                            <label>saída</label>
-                            <select>
-                                <option>Estado</option>
-                                <option></option>
-                                <option></option>
-                            </select>
-                        </div>
-                        <div class="right">
-                            <label>data de saida</label>
-                            <input type="text" maxlength="10"/>
-                        </div>
-                    </div>
 
-                    <div class="destino top">
-                        <div class="left">
-                            <label>destino</label>
-                            <select>
-                                <option>Estado</option>
-                                <option></option>
-                                <option></option>
-                            </select>
-                        </div>
-                        <div class="right">
-                            <label>data de destino</label>
-                            <input type="text" maxlength="10"/>
-                        </div>                    
-                    </div>
-                    
-                    <input type="submit" value="Comprar"/>  
-                </div>
-            </form>
-        </div>
-    </div>
-    {% endblock %}
+{% endblock %}
 </div>
+
+ <footer>
+    <div id="box">
+        <p> Todos os direitos reservados - 2012 </p>
+    </div>
+</footer>
 </body>
 </html>

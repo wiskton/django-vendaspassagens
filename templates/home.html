@@ -1,5 +1,80 @@
-{% extends 'base.html' %}
+{% extends "base.html" %}
+{% load url from future %}
 
-{% block body %}
-HOME
+{% block css %}
+
+{% endblock %}
+
+{% block content %}
+<div id="box">
+    <div class="consulta grid-900">
+        <div class="mapa">
+           <img src="{{ STATIC_URL }}imgs/map.png" alt="mapa"/>
+        </div>
+
+        <div class="form-consulta">
+            <h2 class="title">CONSULTA A COMPRA DE PASSAGENS ONLINE</h2>
+            <form>
+                <div class="input-ida">
+                    <input type="radio" name="ida"/>
+                    <label for="ida">ida e volta</label>
+                </div>
+                
+                <div class="input-s-ida">
+                    <input type="radio" name="sida"/>
+                    <label for="sida">somente ida</label>
+                </div>
+                
+                <div class="seleciona-destino">
+                    <div class="saida">
+                        <div class="left">
+                            <label>saída</label>
+                            <select>
+                                <option>Estado</option>
+                                <option></option>
+                                <option></option>
+                            </select>
+                        </div>
+                        <div class="right">
+                            <label>data de saida</label>
+                            <input type="text" maxlength="10"/>
+                        </div>
+                    </div>
+
+                    <div class="destino top">
+                        <div class="left">
+                            <label>destino</label>
+                            <select>
+                                <option>Estado</option>
+                                <option></option>
+                                <option></option>
+                            </select>
+                        </div>
+                        <div class="right">
+                            <label>data de destino</label>
+                            <input type="text" maxlength="10"/>
+                        </div>                    
+                    </div>
+                    
+                    <input type="submit" value="Comprar"/>  
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="ofertas_mae">
+
+            <p> > Qual é o seu destino?</p>
+            <div id="oferta1">
+                <p>Londres?</p>
+            </div>
+
+            <div id="oferta2">
+                <p>Roma?</p>
+            </div>
+
+            <div id="oferta3">
+                <p>Nova Iorque?</p>
+            </div>
+    </div>
+</div>   
 {% endblock %}

@@ -18,7 +18,7 @@ urlpatterns = patterns('',
     url(r'^home$', TemplateView.as_view(template_name='home.html'), name='home'),
     url(r'^consulta/$', TemplateView.as_view(template_name='consulta.html'), name='consulta'),
     url(r'^identificar-se/$', TemplateView.as_view(template_name='identificar.html'), name='identificar-se'),
-    url(r'^cadastro/$', TemplateView.as_view(template_name='cadastro.html'), name='cadastro'),
+    url(r'^cadastro/$', 'cliente.views.cliente_cadastro', name='cadastro'),
 
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),

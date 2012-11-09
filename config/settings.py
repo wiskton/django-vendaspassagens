@@ -86,11 +86,17 @@ INSTALLED_APPS = (
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.sites',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
-    'django.contrib.admin',
+    'passagens.reserva'
 
-    'south',
+   # 'django.contrib.auth',
+   # 'django.contrib.contenttypes',
+   # 'django.contrib.sessions',
+   # 'django.contrib.sites',
+   # 'django.contrib.messages',
+   # 'django.contrib.staticfiles',
+   # 'django.contrib.admin',
+
+    #'south',
 )
 
 

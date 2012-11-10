@@ -6,6 +6,25 @@
     box-shadow: 0px 0px 5px #666;
 }
 
+.grid-cadastro .nome input {
+    width: 449px;
+}
+
+.grid-cadastro .endereco input {
+    width: 449px;
+}
+
+.grid-cadastro .email input {
+    width: 449px;
+}
+
+.grid-cadastro .estado select {
+    width: 274px;
+}
+
+.grid-cadastro .bairro input {
+    width: 350px;
+}
 table {
     position: relative;
     top: 15px;
@@ -30,7 +49,4 @@ select
     width: 175px;
     height: 38px;
 }
-input:focus 
-{
-    border-color: #395998;
-}
+

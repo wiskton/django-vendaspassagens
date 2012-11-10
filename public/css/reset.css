@@ -77,7 +77,6 @@ html body * dd.clear
 #box{
   width: 1000px;
   margin: 0 auto;
-  overflow: auto;
-  overflow-y: hidden;
-  overflow-x: hidden;
+  overflow: hidden;
 }
+

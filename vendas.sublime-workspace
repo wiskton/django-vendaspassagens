@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"fon",
+				"font-size"
+			],
+			[
+				"ma",
+				"margin-left"
+			],
+			[
+				"tex",
+				"text-decoration"
+			],
+			[
 				"da",
 				"Date"
 			],
@@ -22,10 +34,6 @@
 			[
 				"i",
 				"imgs"
-			],
-			[
-				"ma",
-				"margin"
 			],
 			[
 				"te",
@@ -67,7 +75,7 @@
 			"file": "templates/home.html",
 			"settings":
 			{
-				"buffer_size": 2597,
+				"buffer_size": 2599,
 				"line_ending": "Windows"
 			}
 		},
@@ -75,7 +83,7 @@
 			"file": "config/urls.py",
 			"settings":
 			{
-				"buffer_size": 1844,
+				"buffer_size": 1825,
 				"line_ending": "Windows"
 			}
 		},
@@ -115,7 +123,7 @@
 			"file": "config/settings.py",
 			"settings":
 			{
-				"buffer_size": 5039,
+				"buffer_size": 5056,
 				"line_ending": "Windows"
 			}
 		},
@@ -128,10 +136,18 @@
 			}
 		},
 		{
-			"file": "consulta/views.py",
+			"file": "cliente/models.py",
 			"settings":
 			{
-				"buffer_size": 26,
+				"buffer_size": 651,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "public/css/reset.css",
+			"settings":
+			{
+				"buffer_size": 2329,
 				"line_ending": "Windows"
 			}
 		}
@@ -160,6 +176,7 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Hebert/projetos/vendas_passagens/consulta/views.py",
 		"/C/Users/Hebert/projetos/vendas_passagens/public/css/consulta.css",
 		"/C/Users/Hebert/projetos/vendas_passagens/public/css/style.css",
 		"/C/Users/Hebert/projetos/vendas_passagens/public/css/cadastro.css",
@@ -224,7 +241,7 @@
 	"groups":
 	[
 		{
-			"selected": 6,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -239,8 +256,8 @@
 						"selection":
 						[
 							[
-								1360,
-								1360
+								1380,
+								1380
 							]
 						],
 						"settings":
@@ -250,7 +267,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 467.0,
+						"translation.y": 414.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -260,15 +277,15 @@
 					"file": "templates/home.html",
 					"settings":
 					{
-						"buffer_size": 2597,
+						"buffer_size": 2599,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								622,
-								622
+								2599,
+								2599
 							]
 						],
 						"settings":
@@ -278,7 +295,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 54.0,
+						"translation.y": 1189.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -288,15 +305,15 @@
 					"file": "config/urls.py",
 					"settings":
 					{
-						"buffer_size": 1844,
+						"buffer_size": 1825,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								495,
-								499
+								456,
+								456
 							]
 						],
 						"settings":
@@ -404,8 +421,8 @@
 						"selection":
 						[
 							[
-								296,
-								296
+								299,
+								299
 							]
 						],
 						"settings":
@@ -423,15 +440,15 @@
 					"file": "config/settings.py",
 					"settings":
 					{
-						"buffer_size": 5039,
+						"buffer_size": 5056,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2463,
-								2463
+								0,
+								0
 							]
 						],
 						"settings":
@@ -441,7 +458,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1420.0,
+						"translation.y": 1330.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -474,26 +491,56 @@
 				},
 				{
 					"buffer": 9,
-					"file": "consulta/views.py",
+					"file": "cliente/models.py",
 					"settings":
 					{
-						"buffer_size": 26,
+						"buffer_size": 651,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								651,
+								651
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Python/Python.tmLanguage"
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "public/css/reset.css",
+					"settings":
+					{
+						"buffer_size": 2329,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2329,
+								2329
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1169.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -543,16 +590,20 @@
 		"selected_items":
 		[
 			[
+				"re",
+				"public/css/reset.css"
+			],
+			[
+				"ur",
+				"config/urls.py"
+			],
+			[
 				"sty",
 				"public/css/style.css"
 			],
 			[
 				"es",
 				"public/css/estilo.css"
-			],
-			[
-				"re",
-				"public/css/reset.css"
 			],
 			[
 				"ca",
@@ -593,10 +644,6 @@
 			[
 				"m",
 				"templates/menu.html"
-			],
-			[
-				"ur",
-				"config/urls.py"
 			],
 			[
 				"bas",

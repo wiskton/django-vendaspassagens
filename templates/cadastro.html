@@ -7,87 +7,109 @@
 {% block content %}
 <div class="grid-cadastro">
 <form>
-
-    {{ form.as_p }}
-    <input type="submit" value=" CADASTRAR " />
-    {% comment %}
+    {{ forms }}
+    
+   
+   
+    
     <table cellspacing="10" align="center">
         <tr>
-            <td><label>CPF</label><input type="text" maxlength="11" id="cpf"/></td>
-            <td colspan="2"><label>Nome</label><input type="text" style="width: 449px;"/></td>
-            <td><label>Data de Nascimento</label><input type="text" maxlength="10" id="datanasc"/></td>
+            <td>
+                <label for="id_cpf">CPF</label>
+                {{ form.cpf}}
+            </td>
+            <td colspan="2" class="nome">
+                <label for="id_nome">Nome</label> <!-- style="width: 449px;" -->
+                {{ form.nome }}
+            </td>
+            <td>
+                <label for="data_nasc">Data de Nascimento</label>
+                {{ form.data_nasc }}
         </tr>
 
         <tr>
             <td>
-                <label>Sexo</label>
-                <select>
-                    <option>Masculino</option>
-                    <option>Feminino</option>
-                </select>
+                <label for="id_sexo">Sexo</label>
+                {{ form.sexo }}
             </td>
             <td>
-                <label>Estado Civil</label>
-                <select>
-                    <option>Solteiro(a)</option>
-                    <option>Casado(a)</option>
-                    <option>Viuvo(a)</option>
-                    <option>Divorciado(a)</option>
-                    <option>Outros(a)</option>
-                </select>
+                <label for="id_estado_civil">Estado Civil</label>
+                {{ form.estado_civil }}
             </td>
             <td>
-                <label>Escolaridade</label>
-                <select style="width: 274px;">
-                    <option>Solteiro(a)</option>
-                    <option>Casado(a)</option>
-                    <option>Viuvo(a)</option>
-                    <option>Divorciado(a)</option>
-                    <option>Outros(a)</option>
-                </select>
+                <label>Cidade</label>
+                {{ form.cidade }}
             </td>
             <td><label>Data de Nascimento</label><input type="text" maxlength="10"/></td>
         </tr>
 
         <tr>
-            <td><label>Celular</label><input type="text" maxlength="11"/></td>
-            <td><label>Telefone</label><input type="text" maxlength="11"/></td>
             <td>
-                <label>Estado</label>
-                <select style="width: 274px;">
-                    <option>Acre</option>
-                    <option>Casado(a)</option>
-                    <option>Viuvo(a)</option>
-                    <option>Divorciado(a)</option>
-                    <option>Outros(a)</option>
-                </select>
+                <label>Celular</label>
+                {{ form.celular }}
             </td>
-            <td><label>País</label><input type="text" /></td>
+            <td>
+                <label>Telefone</label>
+                {{ form.telefone }}
+            <td class="estado">
+                <label>Estado</label> 
+                {{ form.estado }} <!-- style="width: 274px;" -->
+            </td>
+            <td>
+                <label>País</label>
+                {{ form.pais }}
+            </td>
         </tr>
 
         <tr>
-            <td colspan="2"><label>Bairro</label><input type="text" style="width: 350px;" /></td>
-            <td colspan="2"><label>Endereço</label><input type="text" style="width: 449px;" /></td>
-        </tr>
-
-        <tr>
-            <td><label>Número</label><input type="text" maxlength="11"/></td>
-            <td><label>Complemento</label><input type="text" /></td>
-            <td colspan="2"><label>Email</label><input type="text" style="width: 449px;" /></td>
-        </tr>
-
-        <tr>
-            <td><label>Senha</label><input type="password" maxlength="11"/></td>
-            <td><label>Confirmar senha</label><input type="password" /></td>
+            <td colspan="2" class="bairro"> 
+                <label>Bairro</label> <!-- style="width: 350px;" -->
+                {{ form.bairro }}
+            </td>
+            <td colspan="2" class="endereco">
+                <label>Endereço</label><!-- style="width: 449px;" -->
+                {{ form.endereco }}
+            </td>
         </tr>
 
         <tr>
             <td>
-                <asp:LinkButton runat="server" id="btnSalvar" Text="Salvar" OnClick="btn_Salvar_Click"/>
+                <label>Número</label>
+                {{ form.numero }}
             </td>
+            <td>
+                <label>Complemento</label>
+                {{ form.complemento }}
+            </td>
+            <td colspan="2" class="email">
+                <label>Email</label> <!--  style="width: 449px;" -->
+                {{ form.email }}
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label>Senha</label>
+                {{ form.senha }}
+            </td>
+            <td>
+                <label>Confirmar senha</label>
+                {{ form.confirmar_senha}}
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label>Ativo</label>
+                {{ form.ativo }}
+            </td>
+            <td>
+                 <input type="submit" value=" CADASTRAR " />
+            </td>
+
+            <td>{{ form.sucesso }}</td>
         </tr>
     </table>
-    {% endcomment %}
 </form>
 </div>
 {% endblock %}

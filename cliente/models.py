@@ -42,7 +42,7 @@ class Cliente(models.Model):
     #ativo = models.BooleanField#(default=True)
     cpf = models.CharField(max_length=11)
     nome = models.CharField(max_length=100)
-    data_nasc = models.DateField('Data de Nascimento', blank=True, null=True)
+    data_nasc = models.DateField('Data de Nascimento', blank=True, null=True) 
     sexo = models.CharField(max_length=1, choices=SEXOS, default=0)
     estado_civil = models.IntegerField(max_length=1, choices=ESTADO_CIVIL, default=0)
     telefone = models.CharField(max_length=13)

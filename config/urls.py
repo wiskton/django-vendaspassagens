@@ -20,6 +20,9 @@ urlpatterns = patterns('',
     url(r'^identificar-se/$', TemplateView.as_view(template_name='identificar.html'), name='identificar-se'),
     url(r'^cadastro/$', 'cliente.views.cliente_cadastro', name='cadastro'),
 
+    #url(r'^home/$', 'cliente.views.consulta', name='consulta'),
+    url(r'^consulta/$', 'consulta.views.Consulta_Venda', name='comprar'),
+
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 

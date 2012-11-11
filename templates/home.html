@@ -30,7 +30,7 @@
                     <div class="saida">
                         <div class="left">
                             <label>saída</label>
-                            {{ form.saida }}
+                            {{ saida_cidade }}
                         </div>
                         <div class="right">
                             <label>data de saida</label>
@@ -50,6 +50,7 @@
                     </div>
                     
                     <input type="submit" value="Comprar"/>  
+                    <a href="{% url "comprar" %}">Comprar</a>
                 </div>
             </form>
         </div>

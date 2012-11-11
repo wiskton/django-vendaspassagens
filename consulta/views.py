@@ -1,22 +1,13 @@
 from django.shortcuts import render
 from django.http import HttpResponseRedirect
 
-from forms import VendaForm
+from models import Consulta
 
-def cliente_cadastro(request):
-    if request.method == 'POST': # If the form has been submitted...
-        form = VendaForm(request.POST) # A form bound to the POST data
-        if form.is_valid(): # All validation rules pass
+def Consulta_Venda(request):
 
-            #form.save()
-
-
-            return HttpResponseRedirect('home.html') # Redirect after POST
-            #return HttpResponse("Dados cadastrados com sucesso!")
-
-    else:
-        form = VendaForm() # An unbound form
+    saida_cidade = request.POST.get('cidadeDestino')
+    consulta = Consulta_Venda.objects.filter(saida_cidade=cidadeDestino)
 
     return render(request, 'home.html', {
-        'form': form,
+        'consulta': consulta,
     })

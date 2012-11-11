@@ -14,7 +14,8 @@
 
         <div class="form-consulta">
             <h2 class="title">CONSULTA A COMPRA DE PASSAGENS ONLINE</h2>
-            <form>
+            <form  method="POST"> {% csrf_token %}
+            {{ forms }}
                 <div class="input-ida">
                     <input type="radio" name="ida"/>
                     <label for="ida">ida e volta</label>
@@ -29,30 +30,22 @@
                     <div class="saida">
                         <div class="left">
                             <label>saída</label>
-                            <select>
-                                <option>Estado</option>
-                                <option></option>
-                                <option></option>
-                            </select>
+                            {{ form.saida }}
                         </div>
                         <div class="right">
                             <label>data de saida</label>
-                            <input type="text" maxlength="10"/>
+                            {{ form.data_saida }}
                         </div>
                     </div>
 
                     <div class="destino top">
                         <div class="left">
                             <label>destino</label>
-                            <select>
-                                <option>Estado</option>
-                                <option></option>
-                                <option></option>
-                            </select>
+                            {{ form.destino }}
                         </div>
                         <div class="right">
                             <label>data de destino</label>
-                            <input type="text" maxlength="10"/>
+                            {{ form.data_volta }}
                         </div>                    
                     </div>
                     

@@ -99,6 +99,7 @@ INSTALLED_APPS = (
 
     'consulta',
     'cliente',
+    'venda',
 )
 
 

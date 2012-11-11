@@ -3,11 +3,11 @@ from django.contrib import admin
 from models import *
 
 class ClienteAdmin(admin.ModelAdmin):
-    list_display = ('user', 'nome', 'data_nasc','sexo')
+    list_display = ('nome','data_nasc','sexo', 'ativo')
     search_fields = ('user__username',)
     list_filter = ['sexo',]
-    #list_editable = ['ativo',]
-    readonly_fields = ['nome', 'cpf', 'data_nasc', 'sexo', 'estado_civil']
+    list_editable = ['ativo',]
+    #readonly_fields = ['cpf', 'data_nasc', 'sexo', 'estado_civil', 'ativo']
     save_on_top = True
     list_per_page = 20
     

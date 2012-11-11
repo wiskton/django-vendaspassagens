@@ -10,8 +10,8 @@ def cliente_cadastro(request):
             
             form.save()
 
-            #return HttpResponseRedirect('/sucesso/') # Redirect after POST
-            return HttpResponse("Dados cadastrados com sucesso!")
+            return HttpResponseRedirect('home.html') # Redirect after POST
+            #return HttpResponse("Dados cadastrados com sucesso!")
 
     else:
         form = ClienteForm() # An unbound form

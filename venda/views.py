@@ -1,11 +1,11 @@
 from django.shortcuts import render
 from django.http import HttpResponseRedirect
 
-from forms import ConsultaForm
+from forms import VendaForm
 
-def consulta(request):
+def cliente_venda(request):
     if request.method == 'POST': # If the form has been submitted...
-        form = ConsultaForm(request.POST) # A form bound to the POST data
+        form = VendaForm(request.POST) # A form bound to the POST data
         if form.is_valid(): # All validation rules pass
             
             form.save()
@@ -14,8 +14,8 @@ def consulta(request):
             #return HttpResponse("Dados cadastrados com sucesso!")
 
     else:
-        form = ConsultaForm() # An unbound form
+        form = VendaForm() # An unbound form
 
-    return render(request, 'cadastro.html', {
+    return render(request, 'home.html', {
         'form': form,
-    })
+    })# Create your views here.

@@ -5,9 +5,9 @@ from django.contrib.auth.models import User
 class Cliente(models.Model):
      
     SEXOS = (
-        (0, '----'),
-        (1, 'Masculino'),
-        (2, 'Feminino'),
+        ('I', '----'),
+        ('M', 'Masculino'),
+        ('F', 'Feminino'),
     )
 
     ESTADO_CIVIL = (
@@ -16,34 +16,35 @@ class Cliente(models.Model):
         (2, 'Casado'),
     )
 
-    ESTADO = {
-        (0, 'SAO PAULO'),
+    ESTADO = (
+        (0, '----'),
         (1, 'MINAS GERAIS'),
         (2, 'PARANA'),
         (3, 'BAHIA'),
         (4, 'GOIAS'),
-    }
+        (4, 'SAO PAULO'),
+    )
 
-    CIDADES = {
-        (0, 'FRANCA'),
+    CIDADES = (
+        (0, '----'),
         (1, 'SAO PAULO'),
         (2, 'RIBEIRAO PRETO'),
         (3, 'ITAU'),
         (4, 'DELFINOPOLIS'),
         (5, 'SAO SEBASTIAO DO PARAISO'),
-        (6, 'SAO SEBASTIAO DO PARAISO'),
-    }
+        (6, 'FRANCA'),
+    )
 
-    PAIS = {
+    PAIS = (
         (1, 'BRASIL'),
-    }
+    )
 
     user = models.OneToOneField(User)
-    #ativo = models.BooleanField#(default=True)
+    ativo = models.BooleanField(default=True)
     cpf = models.CharField(max_length=11)
     nome = models.CharField(max_length=100)
-    data_nasc = models.DateField('Data de Nascimento', blank=True, null=True) 
-    sexo = models.CharField(max_length=1, choices=SEXOS, default=0)
+    data_nasc = models.DateField('Data de Nascimento', blank=True, null=False)
+    sexo = models.CharField(max_length=1, choices=SEXOS, default='I')
     estado_civil = models.IntegerField(max_length=1, choices=ESTADO_CIVIL, default=0)
     telefone = models.CharField(max_length=13)
     celular = models.CharField(max_length=13)

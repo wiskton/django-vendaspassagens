@@ -6,15 +6,12 @@
 
 {% block content %}
 <div class="grid-cadastro">
-<form>
-    {{ forms }}
-    
-   
-   
-    
+ <form  method="POST"> {% csrf_token %}
+     {{ forms }}  
     <table cellspacing="10" align="center">
         <tr>
             <td>
+                <label>{{ form.erro }}</label>
                 <label for="id_cpf">CPF</label>
                 {{ form.cpf}}
             </td>
@@ -102,6 +99,10 @@
             <td>
                 <label>Ativo</label>
                 {{ form.ativo }}
+            </td>
+            <td>
+                <label>User</label>
+                {{ form.user }}
             </td>
             <td>
                  <input type="submit" value=" CADASTRAR " />

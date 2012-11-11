@@ -2,11 +2,10 @@ from django.db import models
 
 # Create your models here.
 
-class Reserva(models.Model):
-	cidade = models.CharField(max_length=100)
-	data = models.DateField('data saida')
-
 class Destino(models.Model):
-	reserva = models.ForeignKey(Reserva)
 	cidadeDestino = models.CharField(max_length=100)
 	dataDestino = models.DateField('data destino')
+	hora_partida = models.CharField(max_length=5)
+	hora_chegada = models.CharField(max_length=5)
+	valor = models.DecimalField(max_digits=5, decimal_places=2)
+	poltrona_livres = models.IntegerField(max_length=5)

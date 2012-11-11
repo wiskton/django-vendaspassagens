@@ -23,7 +23,7 @@ class Venda(models.Model):
                 (6, 'FRANCA'),
         )
 
-        saida = models.CharField(max_length=1, choices=CIDADESAIDA, default=0)
-        destino = models.CharField(max_length=1, choices=CIDADEDESTINO, default=0)
+        saida = models.IntegerField(max_length=1, choices=CIDADESAIDA, default=0)
+        destino = models.IntegerField(max_length=1, choices=CIDADEDESTINO, default=0)
         data_saida = models.DateField('Data Saida', blank=True, null=False)
         data_volta = models.DateField('Data Volta', blank=True, null=False)

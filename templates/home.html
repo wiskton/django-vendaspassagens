@@ -14,7 +14,7 @@
 
         <div class="form-consulta">
             <h2 class="title">CONSULTA A COMPRA DE PASSAGENS ONLINE</h2>
-            <form  method="POST"> {% csrf_token %}
+            <form  method="GET"> {% csrf_token %}
             {{ forms }}
                 <div class="input-ida">
                     <input type="radio" name="ida"/>

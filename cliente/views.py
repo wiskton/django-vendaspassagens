@@ -9,6 +9,7 @@ def cliente_cadastro(request):
         if form.is_valid(): # All validation rules pass
             
             form.save()
+            print a
 
             return HttpResponseRedirect('home.html') # Redirect after POST
             #return HttpResponse("Dados cadastrados com sucesso!")

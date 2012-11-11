@@ -2,8 +2,8 @@
 from django.contrib import admin
 from models import *
 
-class VendaAdmin(admin.ModelAdmin):
-    list_display = ('saida','destino')
+class CadOnibus(admin.ModelAdmin):
+    list_display = ('idonibus','poltrona')
     search_fields = ('user__username',)
     #list_filter = ['sexo',]
     #list_editable = ['ativo',]
@@ -11,4 +11,4 @@ class VendaAdmin(admin.ModelAdmin):
     save_on_top = True
     list_per_page = 20
     
-admin.site.register(Venda, VendaAdmin)
+admin.site.register(Onibus, CadOnibus)

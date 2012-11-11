@@ -1,21 +1,12 @@
 from django.shortcuts import render
 from django.http import HttpResponseRedirect
 
-from forms import VendaForm
+from models import *
 
-def cliente_venda(request):
-    if request.method == 'GET': # If the form has been submitted...
-        form = VendaForm(request.POST) # A form bound to the POST data
-        if form.is_valid(): # All validation rules pass
-            
-            form.save()
+def vendas(request):
 
-            return HttpResponseRedirect('consulta.html') # Redirect after POST
-            #return HttpResponse("Dados cadastrados com sucesso!")
-
-    else:
-        form = VendaForm() # An unbound form
+    vendas = Venda.objects.all()
 
     return render(request, 'home.html', {
-        'form': form,
+        'vendas': vendas,
     })# Create your views here.

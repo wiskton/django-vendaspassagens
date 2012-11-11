@@ -2,6 +2,7 @@
 from django.contrib import admin
 from models import *
 
+
 class VendaAdmin(admin.ModelAdmin):
     list_display = ('saida','destino')
     search_fields = ('user__username',)
@@ -11,4 +12,5 @@ class VendaAdmin(admin.ModelAdmin):
     save_on_top = True
     list_per_page = 20
     
+admin.site.register(Cidade)
 admin.site.register(Venda, VendaAdmin)

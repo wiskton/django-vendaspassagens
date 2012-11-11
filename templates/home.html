@@ -14,8 +14,8 @@
 
         <div class="form-consulta">
             <h2 class="title">CONSULTA A COMPRA DE PASSAGENS ONLINE</h2>
-            <form  method="GET"> {% csrf_token %}
-            {{ forms }}
+            <form method="GET">
+                {% for v in vendas %}
                 <div class="input-ida">
                     <input type="radio" name="ida"/>
                     <label for="ida">ida e volta</label>
@@ -30,28 +30,33 @@
                     <div class="saida">
                         <div class="left">
                             <label>saída</label>
-                            {{ saida_cidade }}
+                            {{ v.saida }}
+                            <input type="hidden" name="saida" value="{{ v.saida }}">
                         </div>
                         <div class="right">
                             <label>data de saida</label>
-                            {{ form.data_saida }}
+                            {{ v.data_saida }}
+                            <input type="hidden" name="data_saida" value="{{ v.data_saida }}">
                         </div>
                     </div>
 
                     <div class="destino top">
                         <div class="left">
                             <label>destino</label>
-                            {{ form.destino }}
+                            {{ v.destino }}
+                            <input type="hidden" name="destino" value="{{ v.destino }}">
                         </div>
                         <div class="right">
                             <label>data de destino</label>
-                            {{ form.data_volta }}
+                            {{ v.data_volta }}
+                            <input type="hidden" name="data_destino" value="{{ v.data_volta }}">
                         </div>                    
                     </div>
                     
                     <input type="submit" value="Comprar"/>  
                     <a href="{% url "comprar" %}">Comprar</a>
                 </div>
+                {% endfor %}
             </form>
         </div>
     </div>

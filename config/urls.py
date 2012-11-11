@@ -14,7 +14,7 @@ urlpatterns = patterns('',
     # url(r'^config/', include('config.foo.urls')),
 
 
-    url(r'^$', TemplateView.as_view(template_name='home.html'), name='home'),
+    url(r'^$', 'venda.views.vendas', name='home'),
     url(r'^home$', TemplateView.as_view(template_name='home.html'), name='home'),
     url(r'^consulta/$', TemplateView.as_view(template_name='consulta.html'), name='consulta'),
     url(r'^identificar-se/$', TemplateView.as_view(template_name='identificar.html'), name='identificar-se'),

@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load url from future %}
+
+{% block css %}
+
+<link rel="stylesheet" href="{{ STATIC_URL }}css/detalhecompra.css" type="text/css">
+
+{% endblock %}
+
+{% block content %}
+<div class="grid-detalhes">
+<form>
+	<h2> FORMAS DE PAGAMENTO </h2>
+
+	<p>
+		<select>
+			<option>CARTAO DE CREDITO</option>
+			<option>BOLETO</option>
+		</select>
+
+	</p>
+
+	<p>================================================================</p>
+
+	<p>SAIDA:</p>
+	<p>DESTINO:</p>
+	<p>DATA SAIDA:</p>
+	<p>================================================================</p>
+	<p><input type="submit" value="FINALIZAR PEDIDO" /></p>
+</form>
+</div>
+{% endblock %}

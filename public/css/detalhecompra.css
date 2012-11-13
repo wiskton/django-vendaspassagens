@@ -1,0 +1,21 @@
+.grid-detalhes {
+	width: 600px;
+	height: 500px;
+	background: #f2f1f0;
+	margin: 0 auto;
+	padding: 50px;
+	box-shadow: 0 0 5px #666;
+}
+
+.grid-detalhes p {
+	line-height: 20px;
+}
+
+.grid-detalhes .text {
+	color: red;
+	font-style: italic;
+}
+
+.grid-detalhes select {
+	margin-top: 30px;
+}

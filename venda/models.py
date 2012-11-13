@@ -21,3 +21,12 @@ class Venda(models.Model):
         data_saida = models.DateField('Data Saida', blank=True, null=False)
         data_volta = models.DateField('Data Volta', blank=True, null=False)
         preco = models.DecimalField(max_digits=10, decimal_places=2, default=40)
+
+class FormasPagamento(models.Model):
+    
+    FPAG = (
+        (0, 'CARTAO DE CREDITO'),
+        (1, 'BOLETO'),
+    )
+
+    formas_pagamento = models.IntegerField(max_length=2, choices=FPAG, default=0)

@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% load url from future %}
+
+{% block css %}
+
+<link rel="stylesheet" href="{{ STATIC_URL }}css/detalhecompra.css" type="text/css">
+
+{% endblock %}
+
+{% block content %}
+<form>
+	<div class="grid-detalhes">
+		<p>COMPROVANTE DE PAGAMENTO</p><br>
+		<p>================================================================</p>
+		<p>PEDIDO: </p>
+		<p>================================================================</p>
+		<p>CLIENTE: </p>
+		<p>CPF: </p>
+		<p>================================================================</p>
+		<p>SAIDA: </p>
+		<p>DESTINO:</p>
+		<p>HORARIO:</p>
+		<p>DATA DE EMBARGUE:</p>
+		<p>POLTRONA:</p>
+		
+		<br /><br />
+		<p>================================================================</p>
+		<p>FORMAS DE PAGAMENTO:  </p>
+		<p>TOTAL:</p>
+		<p>================================================================</p>
+		<p>================================================================</p>
+		
+		<div class="text">
+			<p>OBS.: IMPRIMA O COMPROVANTE E DIRIJA-SE AO TERMINAL RODOVIÁRIO NA DATA DE EMBARGUE E RETIRE SUA PASSAGEM.</p><br /><br />
+			<p>OBRIGADO, BOA VIAGEM!</p>
+		</div>
+
+
+	<input type="button" name="imprimir" value="Imprimir" onclick="window.print();">
+	</div>
+</form>
+{% endblock%}

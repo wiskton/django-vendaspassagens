@@ -20,6 +20,10 @@ urlpatterns = patterns('',
     url(r'^consulta/$', 'venda.views.consulta', name='consulta'),
 
     url(r'^identificar-se/$', TemplateView.as_view(template_name='identificar.html'), name='identificar-se'),
+   
+    url(r'^pagamento/$', TemplateView.as_view(template_name='pagamento.html'), name='pagamento'),
+    
+    url(r'^detalhecompra/$', TemplateView.as_view(template_name='detalhecompra.html'), name='detalhecompra'),
     url(r'^cadastro/$', 'cliente.views.cliente_cadastro', name='cadastro'),
 
     #url(r'^home/$', 'cliente.views.consulta', name='consulta'),

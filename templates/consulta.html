@@ -8,6 +8,7 @@
 {% block content %}
 <div class="content-consulta">
 	<div class="grid-bloco">
+		{% if busao %}
 		<form method="POST" action="/consultalugar/">
 		{% csrf_token %}
     	<label class="cidade">
@@ -35,8 +36,11 @@
 	        
 	        </table>
 	        <input type="submit" value="proximo"/> 
-	    </div>
-	</form>
+		    </div>
+		</form>
+		{% else %}
+			Nenhum onibus para sua escolha
+		{% endif %}
     </div>
 </div>
 {% endblock %}

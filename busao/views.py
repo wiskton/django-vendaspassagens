@@ -27,3 +27,4 @@ def consulta_poltrona(request):
     return render(request, 'consultalugar.html', {
         'onibus': onibus,
     })
+

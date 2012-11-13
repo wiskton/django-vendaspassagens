@@ -41,7 +41,7 @@ class Cliente(models.Model):
 
     user = models.OneToOneField(User)
     ativo = models.BooleanField(default=True)
-    cpf = models.CharField(max_length=11)
+    cpf = models.CharField(max_length=11, unique=True)
     nome = models.CharField(max_length=100)
     data_nasc = models.DateField('Data de Nascimento', blank=True, null=False)
     sexo = models.CharField(max_length=1, choices=SEXOS, default='I')

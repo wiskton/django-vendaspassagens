@@ -18,6 +18,8 @@ urlpatterns = patterns('',
     url(r'^$', ListView.as_view(model=Cidade, template_name='home.html'), name='home'),
     url(r'^consulta/$', 'busao.views.consulta', name='consulta'),
     url(r'^consultalugar/$', 'busao.views.consulta_poltrona', name='proximo'),
+    
+    url(r'^identificar/$', 'cliente.views.identificar', name='identificar'),
 
 
 
@@ -31,7 +33,7 @@ urlpatterns = patterns('',
     #url(r'^consulta/$', TemplateView.as_view(template_name='consulta.html'), name='consulta'),
     # url(r'^consulta/$', 'venda.views.consulta', name='consulta'),
 
-    url(r'^identificar-se/$', TemplateView.as_view(template_name='identificar.html'), name='identificar-se'),
+    #url(r'^iidentificar/$', TemplateView.as_view(template_name='identificar.html'), name='identificar'),
    
     url(r'^pagamento/$', TemplateView.as_view(template_name='pagamento.html'), name='pagamento'),
     

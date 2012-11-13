@@ -6,34 +6,42 @@
 
 {% block content %}
 <div class="grid-cadastro">
- <form  method="POST"> {% csrf_token %}
-     {{ forms }}  
+ <form action="{% url cadastro %}" method="POST"> {% csrf_token %}
     <table cellspacing="10" align="center">
         <tr>
             <td>
-                <label>{{ form.erro }}</label>
+                <label>{{ form.user.errors }}</label>
+                <label>{{ form.cpf.errors }}</label>
+                
                 <label for="id_cpf">CPF</label>
-                {{ form.cpf}}
+                {{ form.cpf }}
+
             </td>
             <td colspan="2" class="nome">
+                <label>{{ form.nome.errors }}</label>
                 <label for="id_nome">Nome</label> <!-- style="width: 449px;" -->
                 {{ form.nome }}
             </td>
             <td>
+
+                <label>{{ form.data_nasc.errors }}</label>
                 <label for="data_nasc">Data de Nascimento</label>
                 {{ form.data_nasc }}
         </tr>
 
         <tr>
             <td>
+                {{ form.id_sexo.errors }}
                 <label for="id_sexo">Sexo</label>
                 {{ form.sexo }}
             </td>
             <td>
+                {{ form.id_estado_civil.errors }}
                 <label for="id_estado_civil">Estado Civil</label>
                 {{ form.estado_civil }}
             </td>
             <td>
+                {{ form.cidade.errors }}
                 <label>Cidade</label>
                 {{ form.cidade }}
             </td>
@@ -42,17 +50,21 @@
 
         <tr>
             <td>
+                {{ form.celular.errors }}
                 <label>Celular</label>
                 {{ form.celular }}
             </td>
             <td>
+                {{ form.telefone.errors }}
                 <label>Telefone</label>
                 {{ form.telefone }}
             <td class="estado">
+                {{ form.estado.errors }}
                 <label>Estado</label> 
                 {{ form.estado }} <!-- style="width: 274px;" -->
             </td>
             <td>
+                {{ form.pais.errors }}
                 <label>País</label>
                 {{ form.pais }}
             </td>
@@ -60,10 +72,12 @@
 
         <tr>
             <td colspan="2" class="bairro"> 
+                {{ form.bairro.errors }}
                 <label>Bairro</label> <!-- style="width: 350px;" -->
                 {{ form.bairro }}
             </td>
             <td colspan="2" class="endereco">
+                {{ form.endereco.errors }}
                 <label>Endereço</label><!-- style="width: 449px;" -->
                 {{ form.endereco }}
             </td>
@@ -71,14 +85,17 @@
 
         <tr>
             <td>
+                {{ form.numero.errors }}
                 <label>Número</label>
                 {{ form.numero }}
             </td>
             <td>
+                {{ form.complemento.errors }}
                 <label>Complemento</label>
                 {{ form.complemento }}
             </td>
             <td colspan="2" class="email">
+                {{ form.email.errors }}
                 <label>Email</label> <!--  style="width: 449px;" -->
                 {{ form.email }}
             </td>
@@ -86,10 +103,12 @@
 
         <tr>
             <td>
+                {{ form.senha.errors }}
                 <label>Senha</label>
                 {{ form.senha }}
             </td>
             <td>
+                {{ form.confirmar_senha.errors }}
                 <label>Confirmar senha</label>
                 {{ form.confirmar_senha}}
             </td>
@@ -97,13 +116,14 @@
 
         <tr>
             <td>
+                {{ form.ativo.errors }}
                 <label>Ativo</label>
                 {{ form.ativo }}
             </td>
-            <td>
+            <!-- <td>
                 <label>User</label>
                 {{ form.user }}
-            </td>
+            </td> -->
             <td>
                  <input type="submit" value=" CADASTRAR " />
             </td>

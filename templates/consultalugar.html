@@ -5,22 +5,22 @@
 {% endblock %}
 
 {% block content %}
-<form>
+<form method="POST" action="/identificar/">
     {% csrf_token %}
 
 <div class="content-bus">
         <div class="grid-371 grid-date">
             <table border="0" cellpadding="5" cellspacing="5">
                 <tr class="title">
-                    <td>Data</td>
+                    <td class="data">Data</td>
                     <td>Serviço</td>
                     <td>Valor</td>
                 </tr>
 
                 <tr class="title-result">
-                    <td>{{ onibus.data_saida }} - {{ onibus.horario_saida }}</td>
+                    <td class="data">{{ onibus.data_saida }} {% comment %}- {{ onibus.horario_saida }}{% endcomment %}</td>
                     <td>00015</td>
-                    <td>{{ onibus.valor }}</td>
+                    <td>R$ {{ onibus.valor }},00</td>
                 </tr>
             </table>
         </div>
@@ -33,7 +33,7 @@
 
                 <tr class="origem-local">
                     <td>Partida - {{ onibus.saida }} - {{ onibus.horario_saida }}</td>
-                    <td>Chegada - {{ onibus.destino }} - {{ onibus.horario_saida }}</td>
+                    <td>Chegada - {{ onibus.destino }} - {{ onibus.horario_volta }}</td>
                 </tr>
             </table>
         </div>
@@ -51,23 +51,24 @@
             </table>
         </div>
       
-        <div style="float:left; width:100%; border: black solid 1px;">
-        {% for p in onibus.todas_poltronas %}
         
-        <div style="background-color:{% if p.status == 0 %}green{% else %}red{% endif %}; padding:10px; float:left; border-right:black solid 1px;">
-            <input type="checkbox" id="r{{ p.numero }}" name="r{{ p.numero }}" />
-            <label for="r{{ p.numero }}">{{ p.numero }}</label>
-        </div>
-        {% endfor %}
-        </div>
-        <div style="clear:both;"></div>
 
         <div class="escolha-lugares">
             <div class="poltronas">
-                <table border="0" cellpadding="7" cellspacing="0" class="lado-direito ">
+
+                <div style="float:left; width:701px; position: absolute; top: 30px; left: 90px">
+        {% for p in onibus.todas_poltronas %}
+        
+        <div style=" width: 50px; height: 30px; padding-top: 9px; float:left; margin-left: 15px; margin-top: 30px;">
+            <input type="checkbox" id="r{{ p.numero }}" name="r{{ p.numero }}" />
+            <label for="r{{ p.numero }}" style="background-color:{% if p.status == 0 %}green{% else %}red{% endif %};">{{ p.numero }}</label>
+        </div>
+        {% endfor %}
+        </div>
+                <!-- <table border="0" cellpadding="7" cellspacing="0" class="lado-direito ">
                     <tr>
-                        <td><input type="checkbox" id="r01" name="r01"/><label for="r01">01</label></td>
-                        <td><input type="checkbox" id="r05" name="r05"/><label for="r05">05</label></td>
+                        <td><input type="checkbox" id="r{{ p.numero }}" name="r{{ p.numero }}" /><label for="r01"  style="background-color:{% if p.status == 0 %}green{% else %}red{% endif %};">01</label></td>
+                        <td><input type="checkbox" id="r05" name="r05"/>for="r{{ p.numero }}">{{ p.numero }}</label></td>
                         <td><input type="checkbox" id="r09" name="r09"/><label for="r09">09</label></td>
                         <td><input type="checkbox" id="r13" name="r13"/><label for="r13">13</label></td>
                         <td><input type="checkbox" id="r17" name="r17"/><label for="r17">17</label></td>
@@ -98,7 +99,8 @@
                         <td><input type="checkbox" id="r07" name="r07"/><label for="r07">07</label></td>
                         <td><input type="checkbox" id="r11" name="r11"/><label for="r11">11</label></td>
                         <td><input type="checkbox" id="r15" name="r15"/><label for="r15">15</label></td>
-                        <td><input type="checkbox" id="r19" name="r19"/><label for="r19">19</label></td>
+                        <td><input type="checkbox" id="r19" name="r19"/><label for="r19" 
+                             style="background-color:{% if p.status == 0 %}green{% else %}red{% endif %};">19</label></td>
                         <td><input type="checkbox" id="r23" name="r23"/><label for="r23">23</label></td>
                         <td><input type="checkbox" id="r27" name="r27"/><label for="r27">27</label></td>
                         <td><input type="checkbox" id="r31" name="r31"/><label for="r31">31</label></td>
@@ -117,7 +119,7 @@
                         <td><input type="checkbox" id="r36" name="r36"/><label for="r36">36</label></td>
                         <td><input type="checkbox" id="r40" name="r40"/><label for="r40">40</label></td>
                     </tr>
-                </table>
+                </table> -->
             </div>
                 <input type="submit" name="avancar" value="PROXIMO" class="proximo"/>
         </div>

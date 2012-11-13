@@ -12,7 +12,11 @@
 		<form method="POST" action="/consultalugar/">
 		{% csrf_token %}
     	<label class="cidade">
-	    	<b>Saida</b> {{ busao.saida.nome }} - <b>Destino</b> {{ busao.destino.nome }}
+	    	<b>Saida</b> {{ busao.saida.nome }} - <b>Destino</b> {{ busao.destino.nome }} - 
+
+	    	{% for onibus in onibus %}
+	    	</b>{{ onibus.data_saida }} <b>
+	    	{% endfor %}
     	</label>
 	    <div class="tabela-resultado">
 	        <table cellpadding="10">
@@ -26,8 +30,8 @@
 				{% for onibus in onibus %}
 	           	<tr class="resultado">
 	                <td><input type="radio" name="r3" id="r3"/><input type="hidden" name="onibus" value="{{ onibus.id }}" /></td>
-	                <td><label for="r3">{{ onibus.data_saida }} - {{ onibus.horario_saida }}</label></td>
-	                <td><label for="r3">{{ onibus.data_volta }} - {{ onibus.horario_saida }}</label></td>
+	                <td><label for="r3"> {% comment %} {{ onibus.data_saida }} {% endcomment %}{{ onibus.horario_saida }}</label></td>
+	                <td><label for="r3">{% comment %}{{ onibus.data_volta }} - {% endcomment %}{{ onibus.horario_volta }}</label></td>
 	                <td><label for="r3">{{ onibus.valor }}</label></td>
 	                <td><label for="r3">{{ onibus.poltronas }}</label></td>
 	            </tr>
@@ -35,8 +39,9 @@
 
 	        
 	        </table>
-	        <input type="submit" value="proximo"/> 
+	       
 		    </div>
+		     <input type="submit" value="Proximo" style="margin-left: 200px; margin-top: 50px;"/> 
 		</form>
 		{% else %}
 			Nenhum onibus para sua escolha

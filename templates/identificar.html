@@ -16,6 +16,9 @@
                     <form action="#">
                         <label>CPF</label>
                         <input type="text" maxlength="11"/>
+                        {% for id in identificar %}
+                            {{ id.cpf }}
+                        {% endfor %}
                         <label>SENHA</label>
                         <input type="password" />
                         <input type="submit" value="Entrar" class="login"/>

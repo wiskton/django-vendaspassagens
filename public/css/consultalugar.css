@@ -17,6 +17,7 @@
         
         .grid-date 
         {
+            width: 467px;
             height: 93px;
             background: #FFF;
             float: left;
@@ -39,6 +40,11 @@
             text-align: center;
             margin-left: 5px;
             margin-top: 2px; 
+        }
+
+        .grid-date .data  {
+            display: block;
+            width: 200px;
         }
         .grid-date  .title td
         {
@@ -175,6 +181,10 @@
              height: 24px;
              display: block;
              float: left;
+         }
+
+         .poltronas {
+            position: relative;
          }
          
          .poltronas label 

@@ -21,6 +21,9 @@ class Onibus(models.Model):
     data_volta = models.DateField('Data Volta', blank=True, null=False)
     valor = models.DecimalField('Valor',decimal_places=2, max_digits=8)
 
+    def todas_poltronas(self):
+        return Poltronas.objects.filter(onibus=self)
+
     def poltronas(self):
         return Poltronas.objects.filter(onibus=self, status=0).count()
 

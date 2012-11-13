@@ -15,3 +15,13 @@ def consulta(request):
         'onibus': onibus,
         'busao': busao,
     })
+
+def consulta_poltrona(request):
+
+    id_onibus = request.POST.get('onibus')
+    
+    onibus = Onibus.objects.get(pk=id_onibus)
+    
+    return render(request, 'consultalugar.html', {
+        'onibus': onibus,
+    })

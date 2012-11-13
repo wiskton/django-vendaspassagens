@@ -18,13 +18,9 @@
                 </tr>
 
                 <tr class="title-result">
-                    <td> <!-- Aqui mostra a data de partida -->
-                        {% for h in lugar %} 
-                            {{ h.data_saida }}                    
-                        {% endfor %}
-                    </td>
+                    <td>{{ onibus.data_saida }} - {{ onibus.horario_saida }}</td>
                     <td>00015</td>
-                    <td>45,60</td>
+                    <td>{{ onibus.valor }}</td>
                 </tr>
             </table>
         </div>
@@ -36,8 +32,8 @@
                 </tr>
 
                 <tr class="origem-local">
-                    <td>Partida - Cidade X (10:00)</td>
-                    <td>Chegada - Cidade Y (11:00)</td>
+                    <td>Partida - {{ onibus.saida }} - {{ onibus.horario_saida }}</td>
+                    <td>Chegada - {{ onibus.destino }} - {{ onibus.horario_saida }}</td>
                 </tr>
             </table>
         </div>
@@ -54,6 +50,17 @@
                 </tr>
             </table>
         </div>
+      
+        <div style="float:left; width:100%; border: black solid 1px;">
+        {% for p in onibus.todas_poltronas %}
+        
+        <div style="background-color:{% if p.status == 0 %}green{% else %}red{% endif %}; padding:10px; float:left; border-right:black solid 1px;">
+            <input type="checkbox" id="r{{ p.numero }}" name="r{{ p.numero }}" />
+            <label for="r{{ p.numero }}">{{ p.numero }}</label>
+        </div>
+        {% endfor %}
+        </div>
+        <div style="clear:both;"></div>
 
         <div class="escolha-lugares">
             <div class="poltronas">

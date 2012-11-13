@@ -17,8 +17,13 @@ urlpatterns = patterns('',
 
     url(r'^$', ListView.as_view(model=Cidade, template_name='home.html'), name='home'),
     url(r'^consulta/$', 'busao.views.consulta', name='consulta'),
+    url(r'^consultalugar/$', 'busao.views.consulta_poltrona', name='proximo'),
 
 
+
+    # url(r'^$', ListView.as_view(model=Cidade, template_name='home.html'), name='home'),
+    # url(r'^consulta/$', 'busao.views.consulta', name='consulta'),
+    # url(r'^consultalugar/$', 'busao.views.consulta_poltrona', name='proximo'),
 
 
     # url(r'^$', 'venda.views.vendas', name='home'),
@@ -30,8 +35,7 @@ urlpatterns = patterns('',
     url(r'^cadastro/$', 'cliente.views.cliente_cadastro', name='cadastro'),
 
     #url(r'^home/$', 'cliente.views.consulta', name='consulta'),
-    url(r'^consulta/$', 'consulta.views.Consulta_Venda', name='comprar'),
-    url(r'^consultalugar/$', 'venda.views.escolherlugar', name='proximo'),
+    # url(r'^consulta/$', 'consulta.views.Consulta_Venda', name='comprar'),
 
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),

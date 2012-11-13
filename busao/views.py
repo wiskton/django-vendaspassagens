@@ -10,6 +10,8 @@ def consulta(request):
 
     if onibus:
         busao = onibus[0]
+    else:
+        busao = ''
     
     return render(request, 'consulta.html', {
         'onibus': onibus,

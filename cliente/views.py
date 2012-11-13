@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.http import HttpResponseRedirect
+from django.http import HttpResponseRedirect, HttpResponse
 
 from django.contrib.auth.models import User
 
@@ -20,16 +20,20 @@ def cliente_cadastro(request):
         #u = User.Objects.all().order_by('-id')[:1]
         print "####"
         print u
-        form.instance.user = u
+        
         
         if form.is_valid(): # All validation rules pass
-
+            form.instance.user = u
             form.save()
             print "######"
             print u
             print "######"
+            #form.instance.user.add(u) #nne add
             #return HttpResponseRedirect('home.html') # Redirect after POST
             #return HttpResponse("Dados cadastrados com sucesso!")
+
+        else:
+            return HttpResponse(form.errors)
 
     else:
         form = ClienteForm() # An unbound form

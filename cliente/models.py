@@ -39,7 +39,7 @@ class Cliente(models.Model):
         (1, 'BRASIL'),
     )
 
-    user = models.OneToOneField(User)
+    user = models.OneToOneField(User, null=True, blank=True)
     ativo = models.BooleanField(default=True)
     cpf = models.CharField(max_length=11, unique=True)
     nome = models.CharField(max_length=100)

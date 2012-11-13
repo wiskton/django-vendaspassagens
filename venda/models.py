@@ -1,6 +1,8 @@
 from django.db import models
+from django.utils.formats import number_format
 
 # Create your models here.
+
 class Cidade(models.Model):
     nome = models.CharField(max_length=255)
     
@@ -18,3 +20,4 @@ class Venda(models.Model):
         destino = models.ForeignKey(Cidade,related_name='destino')
         data_saida = models.DateField('Data Saida', blank=True, null=False)
         data_volta = models.DateField('Data Volta', blank=True, null=False)
+        preco = models.DecimalField(max_digits=10, decimal_places=2, default=40)

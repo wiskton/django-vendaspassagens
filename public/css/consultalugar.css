@@ -1,0 +1,223 @@
+.content-bus
+        {
+            /*width: 765px;
+            height: 333px;
+            margin: 0 auto;
+            background: #e8e8e8;*/
+
+            width: 100%;
+            height:550px;
+            background: #F6F6F6;
+            box-shadow: 0px 0px 5px #666;
+        }
+        
+        .grid-371  {
+            width: 371px;
+        }
+        
+        .grid-date 
+        {
+            height: 93px;
+            background: #FFF;
+            float: left;
+            margin-top: 30px;
+            margin-left: 70px;
+        }
+        
+        .grid-date table 
+        {
+            width: auto;
+        }
+        
+        .grid-date td 
+        {
+            display: block;
+            width: 104px;
+            padding-top: 18px;
+            padding-bottom: 18px;
+            float: left;
+            text-align: center;
+            margin-left: 5px;
+            margin-top: 2px; 
+        }
+        .grid-date  .title td
+        {
+            background: #395998;
+            color: #FFF;
+        }
+        
+        .grid-date .title-result td
+        {
+            background: #F2F1F0;
+            color: #333;
+        }
+        
+        .grid-date  .title-result td:hover 
+        {
+            background: #DFDDDB;
+        }
+        
+        .grid-destino 
+        {
+            height: 130px;
+            background: #FFF;
+            float: right;
+            margin-right: 70px;
+            margin-top: 30px; 
+        }
+        .grid-destino td 
+        {
+            display: block;
+            width: 344px;
+            padding-top: 18px;
+            padding-bottom: 18px;
+            text-align: center;
+            margin-left: 8px;
+            margin-top: 5px;
+        }
+        .grid-destino .title td 
+        {
+            background: #395998;
+            color: #FFF;
+        }
+        
+        .grid-destino .origem-local td 
+        {
+            background: #F2F1F0;
+        }
+        
+        .grid-destino .origem-local td:hover 
+        {
+            background: #DFDDDB;
+        }
+        
+        /* Legenda */
+        .grid-legend 
+        {
+            height: 100px;
+            background: #FFF;
+            float: left;
+            margin-top: 20px;
+            margin-left: 70px;
+        }
+        
+        .grid-legend td 
+        {
+            display: block;
+            padding-top: 18px;
+            padding-bottom: 18px;
+            text-align: center;
+            margin-left: 5px;
+            margin-top: 2px; 
+        }
+        .grid-legend .title td
+        {
+            background: #395998;
+            color: #FFF;
+            width: 342px;
+        }
+        
+        .grid-legend .view-legend td
+        {
+            background: #F2F1F0;
+            color: #333;
+            width: 163px;
+            float: left;
+        }
+        
+        .grid-legend  .view-legend td:hover 
+        {
+            background: #DFDDDB;
+        }
+        
+         .grid-legend  .view-legend .cub1 
+         {
+             display: block;
+             width: 21px;
+             height: 21px;
+             background: #009900;
+             position: absolute;
+             margin-top: -8px;
+         }
+         
+         .grid-legend  .view-legend .cub2 
+         {
+             display: block;
+             width: 21px;
+             height: 21px;
+             background: #FF0000;
+             position: absolute;
+             margin-top: -8px;
+         }
+         
+         /* Onibus */
+         .escolha-lugares 
+         {
+             background-image: url('../imgs/bus.png');
+             background-repeat: no-repeat;
+             width: 761px;
+             height: 217px;
+             margin: 0 auto;
+             position: relative;
+             top: 280px;
+         }
+         .poltronas table 
+         {
+             width: 680px;
+             top: 0;
+             position: absolute;
+             left: 104px;
+         }
+         
+         .poltronas td 
+         {
+             width: 49px;
+             height: 24px;
+             display: block;
+             float: left;
+         }
+         
+         .poltronas label 
+         {
+             display: block;
+             float: right;
+             width: 25px    ;
+             background: #009900;
+             text-align: center;
+             color: #FFF;
+             margin-top: -5px;
+             padding: 14px 1px 14px 1px;
+         }
+         
+         .poltronas label:hover 
+         {
+             background: #FF0000;
+         }
+         .lado-direito 
+         {
+             margin-top: 10px;
+         }
+         
+         .lado-esquerdo 
+         {
+             margin-top: 134px;
+         }
+         
+         .proximo 
+         {
+             margin: 0 auto;
+             background: #395998;
+             color: #FFF;
+             padding: 5px 10px;
+             position: absolute;
+             bottom: -40px;
+             right: 0;
+             
+             border: none;
+         }
+         
+         .proximo:hover 
+         {
+             background: #F2F1F0;
+             color: #333;
+         }

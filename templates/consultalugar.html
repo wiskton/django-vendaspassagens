@@ -1,0 +1,121 @@
+{% extends "base.html" %}
+
+{% block css %}
+<link rel="stylesheet" href="{{ STATIC_URL }}css/consultalugar.css" type="text/css">
+{% endblock %}
+
+{% block content %}
+<form>
+    {% csrf_token %}
+
+<div class="content-bus">
+        <div class="grid-371 grid-date">
+            <table border="0" cellpadding="5" cellspacing="5">
+                <tr class="title">
+                    <td>Data</td>
+                    <td>Serviço</td>
+                    <td>Valor</td>
+                </tr>
+
+                <tr class="title-result">
+                    <td> <!-- Aqui mostra a data de partida -->
+                        {% for h in lugar %} 
+                            {{ h.data_saida }}                    
+                        {% endfor %}
+                    </td>
+                    <td>00015</td>
+                    <td>45,60</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="grid-371 grid-destino">
+            <table border="0" cellpadding="5" cellspacing="0">
+                <tr class="title">
+                    <td>Destino</td>
+                </tr>
+
+                <tr class="origem-local">
+                    <td>Partida - Cidade X (10:00)</td>
+                    <td>Chegada - Cidade Y (11:00)</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="grid-371 grid-legend">
+            <table border="0" cellpadding="5" cellspacing="5">
+                <tr class="title">
+                    <td colspan="2">Legenda</td>
+                </tr>
+
+                <tr class="view-legend">
+                    <td><span class="cub1"></span> Livre</td>
+                    <td><span class="cub2"></span> Ocupado</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="escolha-lugares">
+            <div class="poltronas">
+                <table border="0" cellpadding="7" cellspacing="0" class="lado-direito ">
+                    <tr>
+                        <td><input type="checkbox" id="r01" name="r01"/><label for="r01">01</label></td>
+                        <td><input type="checkbox" id="r05" name="r05"/><label for="r05">05</label></td>
+                        <td><input type="checkbox" id="r09" name="r09"/><label for="r09">09</label></td>
+                        <td><input type="checkbox" id="r13" name="r13"/><label for="r13">13</label></td>
+                        <td><input type="checkbox" id="r17" name="r17"/><label for="r17">17</label></td>
+                        <td><input type="checkbox" id="r21" name="r21"/><label for="r21">21</label></td>
+                        <td><input type="checkbox" id="r25" name="r25"/><label for="r25">25</label></td>
+                        <td><input type="checkbox" id="r29" name="r29"/><label for="r29">29</label></td>
+                        <td><input type="checkbox" id="r33" name="r33"/><label for="r33">33</label></td>
+                        <td><input type="checkbox" id="r37" name="r37"/><label for="r37">37</label></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="checkbox" id="r02" name="r02"/><label for="r02">02</label></td>
+                        <td><input type="checkbox" id="r06" name="r06"/><label for="r06">06</label></td>
+                        <td><input type="checkbox" id="r10" name="r10"/><label for="r10">10</label></td>
+                        <td><input type="checkbox" id="r14" name="r14"/><label for="r14">14</label></td>
+                        <td><input type="checkbox" id="r18" name="r18"/><label for="r18">18</label></td>
+                        <td><input type="checkbox" id="r22" name="r22"/><label for="r22">22</label></td>
+                        <td><input type="checkbox" id="r26" name="r26"/><label for="r26">26</label></td>
+                        <td><input type="checkbox" id="r30" name="r30"/><label for="r30">30</label></td>
+                        <td><input type="checkbox" id="r34" name="r34"/><label for="r34">34</label></td>
+                        <td><input type="checkbox" id="r38" name="r38"/><label for="r38">38</label></td>
+                    </tr>
+                </table>
+
+                <table border="0" cellpadding="7" cellspacing="0" class="lado-esquerdo">
+                    <tr>
+                        <td><input type="checkbox" id="r03" name="r03"/><label for="r03">03</label></td>
+                        <td><input type="checkbox" id="r07" name="r07"/><label for="r07">07</label></td>
+                        <td><input type="checkbox" id="r11" name="r11"/><label for="r11">11</label></td>
+                        <td><input type="checkbox" id="r15" name="r15"/><label for="r15">15</label></td>
+                        <td><input type="checkbox" id="r19" name="r19"/><label for="r19">19</label></td>
+                        <td><input type="checkbox" id="r23" name="r23"/><label for="r23">23</label></td>
+                        <td><input type="checkbox" id="r27" name="r27"/><label for="r27">27</label></td>
+                        <td><input type="checkbox" id="r31" name="r31"/><label for="r31">31</label></td>
+                        <td><input type="checkbox" id="r35" name="r35"/><label for="r35">35</label></td>
+                        <td><input type="checkbox" id="r39" name="r39"/><label for="r39">39</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="r04" name="r04"/><label for="r04">04</label></td>
+                        <td><input type="checkbox" id="r08" name="r08"/><label for="r08">08</label></td>
+                        <td><input type="checkbox" id="r12" name="r12"/><label for="r12">12</label></td>
+                        <td><input type="checkbox" id="r16" name="r16"/><label for="r16">16</label></td>
+                        <td><input type="checkbox" id="r20" name="r20"/><label for="r20">20</label></td>
+                        <td><input type="checkbox" id="r24" name="r24"/><label for="r24">24</label></td>
+                        <td><input type="checkbox" id="r28" name="r28"/><label for="r28">28</label></td>
+                        <td><input type="checkbox" id="r32" name="r32"/><label for="r32">32</label></td>
+                        <td><input type="checkbox" id="r36" name="r36"/><label for="r36">36</label></td>
+                        <td><input type="checkbox" id="r40" name="r40"/><label for="r40">40</label></td>
+                    </tr>
+                </table>
+            </div>
+                <input type="submit" name="avancar" value="PROXIMO" class="proximo"/>
+        </div>
+        
+    </div>
+    </form>
+
+    {% endblock %}

@@ -15,13 +15,16 @@ urlpatterns = patterns('',
 
 
     url(r'^$', 'venda.views.vendas', name='home'),
-    url(r'^home$', TemplateView.as_view(template_name='home.html'), name='home'),
-    url(r'^consulta/$', TemplateView.as_view(template_name='consulta.html'), name='consulta'),
+    #url(r'^home$', TemplateView.as_view(template_name='home.html'), name='home'),
+    #url(r'^consulta/$', TemplateView.as_view(template_name='consulta.html'), name='consulta'),
+    url(r'^consulta/$', 'venda.views.consulta', name='consulta'),
+
     url(r'^identificar-se/$', TemplateView.as_view(template_name='identificar.html'), name='identificar-se'),
     url(r'^cadastro/$', 'cliente.views.cliente_cadastro', name='cadastro'),
 
     #url(r'^home/$', 'cliente.views.consulta', name='consulta'),
     url(r'^consulta/$', 'consulta.views.Consulta_Venda', name='comprar'),
+    url(r'^consultalugar/$', 'venda.views.escolherlugar', name='proximo'),
 
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),

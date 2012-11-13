@@ -4,20 +4,76 @@
 		"selected_items":
 		[
 			[
-				"fon",
-				"font-size"
+				"Po",
+				"PoltronasInline"
+			],
+			[
+				"Poltro",
+				"poltrona"
+			],
+			[
+				"de",
+				"destino"
+			],
+			[
+				"cns",
+				"consulta"
+			],
+			[
+				"c",
+				"consulta"
+			],
+			[
+				"m",
+				"max_length"
+			],
+			[
+				"Dat",
+				"data_saida"
+			],
+			[
+				"da",
+				"DateField"
+			],
+			[
+				"P",
+				"PAULO"
+			],
+			[
+				"Cri",
+				"Cristo"
+			],
+			[
+				"S",
+				"select"
 			],
 			[
 				"ma",
 				"margin-left"
 			],
 			[
-				"tex",
-				"text-decoration"
+				"di",
+				"display"
 			],
 			[
-				"da",
-				"Date"
+				"Pai",
+				"PAIS"
+			],
+			[
+				"DE",
+				"default"
+			],
+			[
+				"In",
+				"IntegerField"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"tex",
+				"text-decoration"
 			],
 			[
 				"C",
@@ -64,10 +120,10 @@
 	"buffers":
 	[
 		{
-			"file": "templates/base.html",
+			"file": "consulta/models.py",
 			"settings":
 			{
-				"buffer_size": 1522,
+				"buffer_size": 392,
 				"line_ending": "Windows"
 			}
 		},
@@ -75,7 +131,15 @@
 			"file": "templates/home.html",
 			"settings":
 			{
-				"buffer_size": 2599,
+				"buffer_size": 2793,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "consulta/views.py",
+			"settings":
+			{
+				"buffer_size": 377,
 				"line_ending": "Windows"
 			}
 		},
@@ -83,15 +147,31 @@
 			"file": "config/urls.py",
 			"settings":
 			{
-				"buffer_size": 1825,
+				"buffer_size": 2007,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "templates/menu.html",
+			"file": "venda/models.py",
 			"settings":
 			{
-				"buffer_size": 363,
+				"buffer_size": 614,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "venda/views.py",
+			"settings":
+			{
+				"buffer_size": 1117,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "templates/cadastro.html",
+			"settings":
+			{
+				"buffer_size": 3191,
 				"line_ending": "Windows"
 			}
 		},
@@ -99,55 +179,31 @@
 			"file": "templates/consulta.html",
 			"settings":
 			{
-				"buffer_size": 1748,
+				"buffer_size": 1861,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "templates/identificar.html",
+			"file": "onibus/models.py",
 			"settings":
 			{
-				"buffer_size": 1270,
+				"buffer_size": 431,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "consulta/models.py",
+			"file": "onibus/admin.py",
 			"settings":
 			{
-				"buffer_size": 334,
+				"buffer_size": 534,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "config/settings.py",
+			"file": "venda/admin.py",
 			"settings":
 			{
-				"buffer_size": 5056,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "consulta/tests.py",
-			"settings":
-			{
-				"buffer_size": 383,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "cliente/models.py",
-			"settings":
-			{
-				"buffer_size": 651,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "public/css/reset.css",
-			"settings":
-			{
-				"buffer_size": 2329,
+				"buffer_size": 450,
 				"line_ending": "Windows"
 			}
 		}
@@ -176,21 +232,42 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Hebert/projetos/vendas_passagens/banco",
+		"/C/Users/Hebert/Documents/Programas/Transportando o Brasil/Transportando o Brasil [PC]/Crack Registro/Hosts (Windows Seven)/hosts",
+		"/C/Users/Hebert/projetos/vendas_passagens/templates/consulta.html",
+		"/C/Users/Hebert/projetos/vendas_passagens/venda/views.py",
+		"/C/Users/Hebert/projetos/vendas_passagens/venda/forms.py",
+		"/C/Users/Hebert/projetos/vendas_passagens/cliente/forms.py",
+		"/C/Users/Hebert/projetos/vendas_passagens/consulta/forms.py",
+		"/C/Users/Hebert/projetos/vendas_passagens/cliente/views.py",
+		"/C/Users/Hebert/projetos/vendas_passagens/templates/base.html",
+		"/C/Users/Hebert/projetos/vendas_passagens/config/urls.py",
+		"/C/Users/Hebert/projetos/vendas_passagens/public/css/cadastro.css",
+		"/C/Users/Hebert/projetos/vendas_passagens/templates/cadastro.html",
+		"/C/Users/Hebert/projetos/vendas_passagens/cliente/admin.py",
+		"/C/Users/Hebert/projetos/vendas_passagens/venda/admin.py",
+		"/C/Users/Hebert/projetos/vendas_passagens/venda/models.py",
+		"/C/Users/Hebert/projetos/vendas_passagens/templates/home.html",
+		"/C/Users/Hebert/projetos/vendas_passagens/onibus/models.py",
+		"/C/Users/Hebert/projetos/vendas_passagens/onibus/admin.py",
 		"/C/Users/Hebert/projetos/vendas_passagens/consulta/views.py",
+		"/C/Users/Hebert/projetos/vendas_passagens/onibus/views.py",
+		"/C/Users/Hebert/projetos/vendas_passagens/config/settings.py",
+		"/C/Users/Hebert/projetos/vendas_passagens/consulta/models.py",
+		"/C/Users/Hebert/projetos/vendas_passagens/consulta/admin.py",
+		"/C/Users/Hebert/projetos/vendas_passagens/templates/menu.html",
+		"/C/Users/Hebert/projetos/vendas_passagens/cliente/models.py",
+		"/C/Users/Hebert/passagens/Lib/site-packages/south/db/sqlite3.pyc",
+		"/C/Users/Hebert/projetos/vendas_passagens/public/css/reset.css",
+		"/C/Users/Hebert/projetos/vendas_passagens/consulta/tests.py",
+		"/C/Users/Hebert/projetos/vendas_passagens/templates/identificar.html",
 		"/C/Users/Hebert/projetos/vendas_passagens/public/css/consulta.css",
 		"/C/Users/Hebert/projetos/vendas_passagens/public/css/style.css",
-		"/C/Users/Hebert/projetos/vendas_passagens/public/css/cadastro.css",
-		"/C/Users/Hebert/projetos/vendas_passagens/public/css/reset.css",
 		"/C/Users/Hebert/projetos/vendas_passagens/public/css/estilo.css",
-		"/C/Users/Hebert/projetos/vendas_passagens/templates/cadastro.html",
 		"/C/Users/Hebert/projetos/vendas_passagens/templates/index.html",
 		"/C/Users/Hebert/projetos/vendas_passagens/public/css/identificar.css",
-		"/C/Users/Hebert/projetos/vendas_passagens/templates/identificar.html",
-		"/C/Users/Hebert/projetos/vendas_passagens/templates/consulta.html",
 		"/C/Users/Hebert/projetos/vendas_passagens/public/css/index.html",
-		"/C/Users/Hebert/projetos/vendas_passagens/templates/home.html",
 		"/C/Users/Hebert/projetos/vendas_passagens/templates/identifcar.html",
-		"/C/Users/Hebert/projetos/vendas_passagens/templates/menu.html",
 		"/C/Users/Hebert/projetos/vendas_passagens/config/local_settings.py",
 		"/C/Users/Hebert/projetos/vendas_passagens/requirements.txt"
 	],
@@ -210,6 +287,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"adm",
+			"clie",
+			"cli",
+			"user",
 			"table",
 			"input",
 			"eleme",
@@ -241,33 +322,31 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 10,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "templates/base.html",
+					"file": "consulta/models.py",
 					"settings":
 					{
-						"buffer_size": 1522,
+						"buffer_size": 392,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1380,
-								1380
+								280,
+								280
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Python/Python.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 414.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -277,15 +356,15 @@
 					"file": "templates/home.html",
 					"settings":
 					{
-						"buffer_size": 2599,
+						"buffer_size": 2793,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2599,
-								2599
+								459,
+								459
 							]
 						],
 						"settings":
@@ -295,25 +374,25 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1189.0,
+						"translation.y": 49.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "config/urls.py",
+					"file": "consulta/views.py",
 					"settings":
 					{
-						"buffer_size": 1825,
+						"buffer_size": 377,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								456,
-								456
+								133,
+								133
 							]
 						],
 						"settings":
@@ -330,117 +409,38 @@
 				},
 				{
 					"buffer": 3,
-					"file": "templates/menu.html",
+					"file": "config/urls.py",
 					"settings":
 					{
-						"buffer_size": 363,
+						"buffer_size": 2007,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								97,
-								97
+								736,
+								736
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 152.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 4,
-					"file": "templates/consulta.html",
+					"file": "venda/models.py",
 					"settings":
 					{
-						"buffer_size": 1748,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								187,
-								171
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "templates/identificar.html",
-					"settings":
-					{
-						"buffer_size": 1270,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "consulta/models.py",
-					"settings":
-					{
-						"buffer_size": 334,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								299,
-								299
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "config/settings.py",
-					"settings":
-					{
-						"buffer_size": 5056,
+						"buffer_size": 614,
 						"regions":
 						{
 						},
@@ -458,25 +458,107 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1330.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 8,
-					"file": "consulta/tests.py",
+					"buffer": 5,
+					"file": "venda/views.py",
 					"settings":
 					{
-						"buffer_size": 383,
+						"buffer_size": 1117,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								927,
+								935
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 285.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "templates/cadastro.html",
+					"settings":
+					{
+						"buffer_size": 3191,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								210,
+								226
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "templates/consulta.html",
+					"settings":
+					{
+						"buffer_size": 1861,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								890,
+								896
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 95.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "onibus/models.py",
+					"settings":
+					{
+						"buffer_size": 431,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								259,
+								259
 							]
 						],
 						"settings":
@@ -491,25 +573,23 @@
 				},
 				{
 					"buffer": 9,
-					"file": "cliente/models.py",
+					"file": "onibus/admin.py",
 					"settings":
 					{
-						"buffer_size": 651,
+						"buffer_size": 534,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								651,
-								651
+								141,
+								141
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Python/Python.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Python/Python.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -519,28 +599,26 @@
 				},
 				{
 					"buffer": 10,
-					"file": "public/css/reset.css",
+					"file": "venda/admin.py",
 					"settings":
 					{
-						"buffer_size": 2329,
+						"buffer_size": 450,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2329,
-								2329
+								79,
+								79
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Python/Python.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 1169.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -590,6 +668,42 @@
 		"selected_items":
 		[
 			[
+				"con",
+				"templates/consulta.html"
+			],
+			[
+				"caa",
+				"templates/cadastro.html"
+			],
+			[
+				"hom",
+				"templates/home.html"
+			],
+			[
+				"co",
+				"templates/consulta.html"
+			],
+			[
+				"u",
+				"config/urls.py"
+			],
+			[
+				"set",
+				"config/settings.py"
+			],
+			[
+				"se",
+				"config/settings.py"
+			],
+			[
+				"ca",
+				"templates/cadastro.html"
+			],
+			[
+				"cad",
+				"public/css/cadastro.css"
+			],
+			[
 				"re",
 				"public/css/reset.css"
 			],
@@ -606,20 +720,8 @@
 				"public/css/estilo.css"
 			],
 			[
-				"ca",
-				"public/css/cadastro.css"
-			],
-			[
 				"in",
 				"templates/identificar.html"
-			],
-			[
-				"co",
-				"templates/consulta.html"
-			],
-			[
-				"cad",
-				"public/css/cadastro.css"
 			],
 			[
 				"cada",

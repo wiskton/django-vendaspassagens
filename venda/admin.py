@@ -4,7 +4,7 @@ from models import *
 
 
 class VendaAdmin(admin.ModelAdmin):
-    list_display = ('saida','destino')
+    list_display = ('saida','destino', 'data_saida')
     search_fields = ('user__username',)
     #list_filter = ['sexo',]
     #list_editable = ['ativo',]

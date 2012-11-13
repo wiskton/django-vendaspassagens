@@ -15,7 +15,7 @@ dl, dt, dd, ol, ul, li,
 fieldset, form, legend,
 table, caption, tbody, tfoot, thead, tr, th, td {
   margin: 0;
-  padding: 0;
+ 
   border: 0;
   font-size: 100%;
   
@@ -43,7 +43,7 @@ del { text-decoration: line-through; }
 .fix{clear: both;height: 1px;margin: -1px 0 0;overflow: hidden;}
 
 html body * span.clear,
-html body * div.clear,
+
 html body * li.clear,
 html body * dd.clear
 {

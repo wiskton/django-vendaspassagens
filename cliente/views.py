@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from django.http import HttpResponseRedirect
 
+from django.contrib.auth.models import User
+
 from forms import ClienteForm
 
 from models import * #importa tudo de models
@@ -14,10 +16,11 @@ def cliente_cadastro(request):
         u.password = request.POST.get('senha')
         u.nome = request.POST.get('nome')
         
-        user = u.save(commit=False)
-        print user
-        print "#####"
-        form.instance.user = user
+        u.save()
+        #u = User.Objects.all().order_by('-id')[:1]
+        print "####"
+        print u
+        form.instance.user = u
         
         if form.is_valid(): # All validation rules pass
 

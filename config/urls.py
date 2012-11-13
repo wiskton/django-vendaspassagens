@@ -1,9 +1,10 @@
 # coding: utf-8
 from django.conf.urls import patterns, include, url
-from django.views.generic import TemplateView
+from django.views.generic import TemplateView, DetailView, ListView
 from django.conf import settings
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
-#, DetailView, ListView
+
+from busao.models import *
 
 from django.contrib import admin
 admin.autodiscover()
@@ -14,10 +15,16 @@ urlpatterns = patterns('',
     # url(r'^config/', include('config.foo.urls')),
 
 
-    url(r'^$', 'venda.views.vendas', name='home'),
+    url(r'^$', ListView.as_view(model=Cidade, template_name='home.html'), name='home'),
+    url(r'^consulta/$', 'busao.views.consulta', name='consulta'),
+
+
+
+
+    # url(r'^$', 'venda.views.vendas', name='home'),
     #url(r'^home$', TemplateView.as_view(template_name='home.html'), name='home'),
     #url(r'^consulta/$', TemplateView.as_view(template_name='consulta.html'), name='consulta'),
-    url(r'^consulta/$', 'venda.views.consulta', name='consulta'),
+    # url(r'^consulta/$', 'venda.views.consulta', name='consulta'),
 
     url(r'^identificar-se/$', TemplateView.as_view(template_name='identificar.html'), name='identificar-se'),
     url(r'^cadastro/$', 'cliente.views.cliente_cadastro', name='cadastro'),

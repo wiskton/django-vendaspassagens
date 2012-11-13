@@ -103,6 +103,8 @@ INSTALLED_APPS = (
     'cliente',
     'venda',
     'onibus',
+
+    'busao',
 )
 
 

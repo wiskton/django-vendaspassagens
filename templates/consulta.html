@@ -11,11 +11,7 @@
 		<form method="POST" action="/consultalugar/">
 		{% csrf_token %}
     	<label class="cidade">
-    		{% for v in vendas %}
-    			{{ v.saida.nome }} - {{ v.destino.nome }} - {{ v.data_saida }} 
-    		
-    		 {% endfor %}
-
+	    	<b>Saida</b> {{ busao.saida.nome }} - <b>Destino</b> {{ busao.destino.nome }}
     	</label>
 	    <div class="tabela-resultado">
 	        <table cellpadding="10">
@@ -26,40 +22,15 @@
 	                <td><label>Valor</label></td>
 	                <td><label>Poltronas livres</label></td>
 	            </tr>
-
-	            <tr class="resultado">
-	                <td><input type="radio" name="r1" id="r1"/></td>
-	                <td>
-	                	<label for="r1">
-	                		<!-- HORARIO DE PARTIDA DO ONIBUS -->
-	                		
-	                	</label>
-	           		</td>
-	                <td><label for="r1">10:30</label></td>
-	                <td>
-	                	<label for="r1">
-	                		
-	                		
-	                	</label>
-	                </td>
-	                <td><label for="r1">12</label></td>
+				{% for onibus in onibus %}
+	           	<tr class="resultado">
+	                <td><input type="radio" name="r3" id="r3"/><input type="hidden" name="onibus" value="{{ onibus.id }}" /></td>
+	                <td><label for="r3">{{ onibus.data_saida }} - {{ onibus.horario_saida }}</label></td>
+	                <td><label for="r3">{{ onibus.data_volta }} - {{ onibus.horario_saida }}</label></td>
+	                <td><label for="r3">{{ onibus.valor }}</label></td>
+	                <td><label for="r3">{{ onibus.poltronas }}</label></td>
 	            </tr>
-
-	            <tr class="resultado">
-	                <td><input type="radio" name="r2" id="r2"/></td>
-	                <td><label for="r2">08:30</label></td>
-	                <td><label for="r2">10:30</label></td>
-	                <td><label for="r2">30,00</label></td>
-	                <td><label for="r2">12</label></td>
-	            </tr>
-
-	           <tr class="resultado">
-	                <td><input type="radio" name="r3" id="r3"/></td>
-	                <td><label for="r3">08:30</label></td>
-	                <td><label for="r3">10:30</label></td>
-	                <td><label for="r3">30,00</label></td>
-	                <td><label for="r3">12</label></td>
-	            </tr>
+    		 	{% endfor %}
 
 	        
 	        </table>

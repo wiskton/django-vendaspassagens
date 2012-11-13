@@ -31,8 +31,8 @@
                         <div class="left">
                             <label for="saida">saída</label>
                             <select name="saida">
-                            {% for v in cidades %}
-                                <option value="{{ v.id }}">{{ v.nome }}</option>
+                            {% for cidade in object_list %}
+                                <option value="{{ cidade.id }}">{{ cidade.nome }}</option>
                             {% endfor %}
                             </select>
                            
@@ -47,8 +47,8 @@
                         <div class="left">
                             <label for="destino">destiono</label>
                             <select name="destino">
-                            {% for v in cidades %}
-                                <option value="{{ v.id }}">{{ v.nome }}</option>
+                            {% for cidade in object_list %}
+                                <option value="{{ cidade.id }}">{{ cidade.nome }}</option>
                             {% endfor %}
                             </select>
                         </div>

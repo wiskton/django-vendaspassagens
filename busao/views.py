@@ -28,3 +28,5 @@ def consulta_poltrona(request):
         'onibus': onibus,
     })
 
+
+

@@ -9,7 +9,8 @@
 
 {% block content %}
 <div class="grid-detalhes">
-<form>
+<form method="POST" action="/detalhecompra/">
+	 {% csrf_token %}
 	<h2> FORMAS DE PAGAMENTO </h2>
 
 	<p>
@@ -25,8 +26,10 @@
 	<p>SAIDA:</p>
 	<p>DESTINO:</p>
 	<p>DATA SAIDA:</p>
+	<p>POLTRONAS: {% for f in finalizar %}{{ f.numeroPoltrona }}{% endfor %}</p>
 	<p>================================================================</p>
 	<p><input type="submit" value="FINALIZAR PEDIDO" /></p>
+	
 </form>
 </div>
 {% endblock %}

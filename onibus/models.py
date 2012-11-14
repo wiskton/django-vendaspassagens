@@ -8,7 +8,7 @@ class Onibus(models.Model):
 	horario_partida = models.CharField(max_length=5)
 	horario_destino = models.CharField(max_length=5)
 
-class Poltronas(models.Model):
+class Poltronas(models.Model): #nao considerar 
 	STATUS = (
 		(0, 'LIVRE'),
 		(1, 'OCUPADO'),

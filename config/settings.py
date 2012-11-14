@@ -91,7 +91,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'django.contrib.admin',
     'django.contrib.contenttypes',
-
+    
     # 'django.contrib.auth',
     # 'django.contrib.sessions',
     # 'django.contrib.sites',

@@ -25,8 +25,8 @@ class Venda(models.Model):
 class FormasPagamento(models.Model):
     
     FPAG = (
-        (0, 'CARTAO DE CREDITO'),
-        (1, 'BOLETO'),
+        (0, '-----'),
+        (1, 'CARTAO DE CREDITO'),
     )
 
     formas_pagamento = models.IntegerField(max_length=2, choices=FPAG, default=0)

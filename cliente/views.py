@@ -29,9 +29,9 @@ def cliente_cadastro(request):
             print u
             print "######"
             #form.instance.user.add(u) #nne add
-            #return HttpResponseRedirect('home.html') # Redirect after POST
-            #return HttpResponse("Dados cadastrados com sucesso!")
-
+            #return HttpResponseRedirect('pagamento.html') # Redirect after POST
+            return HttpResponse("Dados cadastrados com sucesso!")
+            return HttpResponseRedirect('pagamento.html')
         else:
             return HttpResponse(form.errors)
 
@@ -60,6 +60,26 @@ def identificar(request):
     #     else:
     #         senha = ''
     
-    return render(request, 'identificar.html', {
+    return render(request, 'pagamento.html', { #AQUI É ONDE ELE LEVA PARA A TELA IDENTIFICAR  É SÓ COLOCAR
+        #indentificar.html
         'cliente': cliente,
+    })
+
+
+def finalizar(request):
+
+    poltrona = request.POST.get('numeroPoltrona')
+
+    finalizar = Onibus.objects.get(numeroPoltrona=numeroPoltrona)
+    #queryset.update(status=1)
+
+        # finalizar = finalizar.objects.get('status')
+        # status = queryset.update(status=1)
+
+    print "###########"
+    print finalizar
+    print "###########"
+    return render(request, 'detalhecompra.html', {
+        'finalizar': finalizar,
+
     })

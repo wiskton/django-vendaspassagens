@@ -37,8 +37,10 @@ urlpatterns = patterns('',
    
     url(r'^pagamento/$', TemplateView.as_view(template_name='pagamento.html'), name='pagamento'),
     
-    url(r'^detalhecompra/$', TemplateView.as_view(template_name='detalhecompra.html'), name='detalhecompra'),
+    #url(r'^detalhecompra/$', TemplateView.as_view(template_name='detalhecompra.html'), name='detalhecompra'),
     url(r'^cadastro/$', 'cliente.views.cliente_cadastro', name='cadastro'),
+    url(r'^pagamento/$', 'cliente.views.cliente_cadastro', name='pagamento'),
+    url(r'^detalhecompra/$', 'cliente.views.finalizar', name='detalhecompra'),
 
     #url(r'^home/$', 'cliente.views.consulta', name='consulta'),
     # url(r'^consulta/$', 'consulta.views.Consulta_Venda', name='comprar'),
